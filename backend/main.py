@@ -14,8 +14,12 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 if CURRENT_DIR not in sys.path:
     sys.path.insert(0, CURRENT_DIR)
 
-from app.api.routes import router as api_router
-from app.indexing.index_manager import IndexManager
+try:
+    from app.api.routes import router as api_router
+    from app.indexing.index_manager import IndexManager
+except (ImportError, AttributeError):
+    from backend.app.api.routes import router as api_router
+    from backend.app.indexing.index_manager import IndexManager
 
 
 @asynccontextmanager
