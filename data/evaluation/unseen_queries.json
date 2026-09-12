@@ -1,0 +1,177 @@
+[
+  {
+    "id": "unseen_01",
+    "category": "hinglish_conversational",
+    "query": "mera bday kab hai",
+    "expected_message_id": "msg_5201",
+    "description": "Informal Hinglish query asking for user birthday date"
+  },
+  {
+    "id": "unseen_02",
+    "category": "hinglish_conversational",
+    "query": "mera birthday kis date ko hai",
+    "expected_message_id": "msg_5201",
+    "description": "Hinglish variant asking for exact birthday date"
+  },
+  {
+    "id": "unseen_03",
+    "category": "hinglish_conversational",
+    "query": "birthday party celebration kahan aur kitne baje hai",
+    "expected_message_id": "msg_5203",
+    "description": "Asking for venue and time of birthday party"
+  },
+  {
+    "id": "unseen_04",
+    "category": "hinglish_conversational",
+    "query": "cake kisne order kiya tha",
+    "expected_message_id": "msg_5202",
+    "description": "Asking who ordered the chocolate truffle cake"
+  },
+  {
+    "id": "unseen_05",
+    "category": "hinglish_conversational",
+    "query": "birthday treat kiski taraf se thi",
+    "expected_message_id": "msg_5204",
+    "description": "Asking who promised the birthday treat"
+  },
+  {
+    "id": "unseen_06",
+    "category": "hinglish_conversational",
+    "query": "trip ka final kya hua",
+    "expected_message_id": "msg_3769",
+    "description": "Hinglish query on final destination outcome"
+  },
+  {
+    "id": "unseen_07",
+    "category": "hinglish_conversational",
+    "query": "vacation ke dates kya locked hue the",
+    "expected_message_id": "msg_3767",
+    "description": "Hinglish query on locked vacation dates"
+  },
+  {
+    "id": "unseen_08",
+    "category": "hinglish_conversational",
+    "query": "trip ke liye budget limit kitna fix hua",
+    "expected_message_id": "msg_3542",
+    "description": "Hinglish query on 8k trip budget"
+  },
+  {
+    "id": "unseen_09",
+    "category": "hinglish_conversational",
+    "query": "cabs konsi book ki trip ke liye",
+    "expected_message_id": "msg_3674",
+    "description": "Query about vehicle booking for trip (Innova cabs)"
+  },
+  {
+    "id": "unseen_10",
+    "category": "hinglish_conversational",
+    "query": "stay kahan book kiya trip ka",
+    "expected_message_id": "msg_3740",
+    "description": "Query about accommodation and riverside cottage booking"
+  },
+  {
+    "id": "unseen_11",
+    "category": "short_query",
+    "query": "bday kab?",
+    "expected_message_id": "msg_5201",
+    "description": "Very short 2-word Hinglish query"
+  },
+  {
+    "id": "unseen_12",
+    "category": "short_query",
+    "query": "when did we lock trip dates",
+    "expected_message_id": "msg_3767",
+    "description": "Query for 14-18 locked vacation dates"
+  },
+  {
+    "id": "unseen_13",
+    "category": "short_query",
+    "query": "maximum expenditure budget limit",
+    "expected_message_id": "msg_3542",
+    "description": "Query for 8k expenditure cap"
+  },
+  {
+    "id": "unseen_14",
+    "category": "short_query",
+    "query": "tech stack",
+    "expected_message_id": "msg_1390",
+    "description": "Short query for software framework decision"
+  },
+  {
+    "id": "unseen_15",
+    "category": "conversational_paraphrase",
+    "query": "project submission deadline kab tak push hui thi",
+    "expected_message_id": "msg_1650",
+    "description": "Paraphrased query on professor extension"
+  },
+  {
+    "id": "unseen_16",
+    "category": "conversational_paraphrase",
+    "query": "github organization kisne create kiya",
+    "expected_message_id": "msg_4048",
+    "description": "Who set up the git repository organization"
+  },
+  {
+    "id": "unseen_17",
+    "category": "conversational_paraphrase",
+    "query": "wireframes kisne banaye the dashboard ke",
+    "expected_message_id": "msg_2311",
+    "description": "Who updated Figma wireframes for dashboard"
+  },
+  {
+    "id": "unseen_18",
+    "category": "conversational_paraphrase",
+    "query": "annual symposium kis date ko hone wala hai",
+    "expected_message_id": "msg_4725",
+    "description": "Date of college annual symposium (September 18)"
+  },
+  {
+    "id": "unseen_19",
+    "category": "conversational_paraphrase",
+    "query": "auditorium slot kab approve hua",
+    "expected_message_id": "msg_4720",
+    "description": "Timing of auditorium slot approval and receipt signed"
+  },
+  {
+    "id": "unseen_20",
+    "category": "conversational_paraphrase",
+    "query": "fest ke kharche manage karne ke liye kya banaya",
+    "expected_message_id": "msg_4618",
+    "description": "Splitwise group setup for college fest"
+  },
+  {
+    "id": "unseen_21",
+    "category": "conversational_paraphrase",
+    "query": "placement dinner party kahan organise hui thi",
+    "expected_message_id": "msg_4537",
+    "description": "Barbeque Nation celebration for Rahul placement"
+  },
+  {
+    "id": "unseen_22",
+    "category": "conversational_paraphrase",
+    "query": "sunday box cricket match kahan confirm hua",
+    "expected_message_id": "msg_1774",
+    "description": "Apex box cricket arena confirmation"
+  },
+  {
+    "id": "unseen_23",
+    "category": "conversational_paraphrase",
+    "query": "library kyu band thi sunday ko",
+    "expected_message_id": "msg_2817",
+    "description": "AC maintenance library closure"
+  },
+  {
+    "id": "unseen_24",
+    "category": "typo_code_mixed",
+    "query": "manali final kb hua tha",
+    "expected_message_id": "msg_3769",
+    "description": "Abbreviated Hinglish query with kb for kab"
+  },
+  {
+    "id": "unseen_25",
+    "category": "typo_code_mixed",
+    "query": "bday party hostel common room me kitne bje h",
+    "expected_message_id": "msg_5203",
+    "description": "Abbreviated Hinglish query with bje for baje and h for hai"
+  }
+]

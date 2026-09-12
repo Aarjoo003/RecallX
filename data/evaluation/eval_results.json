@@ -1,0 +1,1676 @@
+{
+  "timestamp": "2026-09-12T16:47:46",
+  "total_queries": 40,
+  "overall_top1_accuracy": 100.0,
+  "overall_top3_accuracy": 100.0,
+  "zero_overlap_top1_accuracy": 100.0,
+  "zero_overlap_top3_accuracy": 100.0,
+  "avg_latency_ms": 1389.78,
+  "category_breakdown": {
+    "zero_overlap": {
+      "total": 10,
+      "top1_correct": 10,
+      "top3_correct": 10,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "semantic": {
+      "total": 5,
+      "top1_correct": 5,
+      "top3_correct": 5,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "person": {
+      "total": 5,
+      "top1_correct": 5,
+      "top3_correct": 5,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "time": {
+      "total": 5,
+      "top1_correct": 5,
+      "top3_correct": 5,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "person_topic": {
+      "total": 5,
+      "top1_correct": 5,
+      "top3_correct": 5,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "time_topic": {
+      "total": 4,
+      "top1_correct": 4,
+      "top3_correct": 4,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "decision": {
+      "total": 4,
+      "top1_correct": 4,
+      "top3_correct": 4,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "hinglish": {
+      "total": 1,
+      "top1_correct": 1,
+      "top3_correct": 1,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "typo_informal": {
+      "total": 1,
+      "top1_correct": 1,
+      "top3_correct": 1,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    }
+  },
+  "results": [
+    {
+      "id": "eval_01",
+      "category": "zero_overlap",
+      "query": "When did we finally settle on the destination?",
+      "expected_message_id": "msg_3769",
+      "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "predicted_message_id": "msg_3769",
+      "predicted_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 126.9,
+      "top_candidates": [
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 1.0,
+          "semantic_score": 0.6997,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.6147,
+          "semantic_score": 0.5883,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_3740",
+          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+          "participant": "Rahul Verma",
+          "final_score": 0.5875,
+          "semantic_score": 0.6778,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_02",
+      "category": "zero_overlap",
+      "query": "Which technical stack was picked for the capstone?",
+      "expected_message_id": "msg_1390",
+      "target_text": "FastAPI with React confirmed as our build choice.",
+      "predicted_message_id": "msg_1390",
+      "predicted_text": "FastAPI with React confirmed as our build choice.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 2490.02,
+      "top_candidates": [
+        {
+          "message_id": "msg_1390",
+          "text": "FastAPI with React confirmed as our build choice.",
+          "participant": "Sneha Rao",
+          "final_score": 0.798,
+          "semantic_score": 0.8178,
+          "lexical_score": 0.7996
+        },
+        {
+          "message_id": "msg_1389",
+          "text": "Done from my side too. Let's make it official.",
+          "participant": "Priya Patel",
+          "final_score": 0.6361,
+          "semantic_score": 0.7858,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1385",
+          "text": "Guys, guide is asking for final framework confirmation today evening.",
+          "participant": "Aman Sharma",
+          "final_score": 0.6169,
+          "semantic_score": 0.7432,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_03",
+      "category": "zero_overlap",
+      "query": "Where will the grand college summit take place?",
+      "expected_message_id": "msg_4720",
+      "target_text": "Auditorium slot approved, booking receipt signed.",
+      "predicted_message_id": "msg_4720",
+      "predicted_text": "Auditorium slot approved, booking receipt signed.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 2459.84,
+      "top_candidates": [
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 1.0,
+          "semantic_score": 0.7096,
+          "lexical_score": 0.6857
+        },
+        {
+          "message_id": "msg_4725",
+          "text": "September 18 finalized for annual symposium, circular released.",
+          "participant": "Priya Patel",
+          "final_score": 0.6306,
+          "semantic_score": 0.6235,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_4920",
+          "text": "Awesome, send pdf preview when done Divya.",
+          "participant": "Aman Sharma",
+          "final_score": 0.557,
+          "semantic_score": 0.61,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_04",
+      "category": "zero_overlap",
+      "query": "What is the maximum expenditure allowed per head?",
+      "expected_message_id": "msg_3542",
+      "target_text": "Sabhi log suno, total limit 8k fix kar di.",
+      "predicted_message_id": "msg_3542",
+      "predicted_text": "Sabhi log suno, total limit 8k fix kar di.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 204.03,
+      "top_candidates": [
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 1.0,
+          "semantic_score": 0.5242,
+          "lexical_score": 0.2501
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.4367,
+          "semantic_score": 0.629,
+          "lexical_score": 0.26
+        },
+        {
+          "message_id": "msg_3522",
+          "text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
+          "participant": "Priya Patel",
+          "final_score": 0.471,
+          "semantic_score": 0.5444,
+          "lexical_score": 0.6509
+        }
+      ]
+    },
+    {
+      "id": "eval_05",
+      "category": "zero_overlap",
+      "query": "Who accepted responsibility for creating the slide presentation?",
+      "expected_message_id": "msg_4919",
+      "target_text": "Divya handles PPT compilation tonight.",
+      "predicted_message_id": "msg_4919",
+      "predicted_text": "Divya handles PPT compilation tonight.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 1672.48,
+      "top_candidates": [
+        {
+          "message_id": "msg_4919",
+          "text": "Divya handles PPT compilation tonight.",
+          "participant": "Divya Nair",
+          "final_score": 1.0,
+          "semantic_score": 0.4992,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_4918",
+          "text": "Who is finishing the final presentation deck?",
+          "participant": "Sneha Rao",
+          "final_score": 0.8397,
+          "semantic_score": 0.5927,
+          "lexical_score": 0.3808
+        },
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 0.6036,
+          "semantic_score": 0.7096,
+          "lexical_score": 0.6857
+        }
+      ]
+    },
+    {
+      "id": "eval_06",
+      "category": "zero_overlap",
+      "query": "What caused the campus network outage?",
+      "expected_message_id": "msg_0632",
+      "target_text": "Severed optical fiber cable near main hostel gate.",
+      "predicted_message_id": "msg_0632",
+      "predicted_text": "Severed optical fiber cable near main hostel gate.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 175.27,
+      "top_candidates": [
+        {
+          "message_id": "msg_0632",
+          "text": "Severed optical fiber cable near main hostel gate.",
+          "participant": "Vikram Singh",
+          "final_score": 1.0,
+          "semantic_score": 0.8394,
+          "lexical_score": 0.8356
+        },
+        {
+          "message_id": "msg_0633",
+          "text": "Ah excavation work chal raha tha drainage ka, unhone cut kar diya hoga.",
+          "participant": "Divya Nair",
+          "final_score": 1.0,
+          "semantic_score": 0.8198,
+          "lexical_score": 0.2046
+        },
+        {
+          "message_id": "msg_0628",
+          "text": "Haan library wifi is completely dead. Cellular network is also jamming.",
+          "participant": "Sneha Rao",
+          "final_score": 0.6651,
+          "semantic_score": 0.819,
+          "lexical_score": 0.6031
+        }
+      ]
+    },
+    {
+      "id": "eval_07",
+      "category": "zero_overlap",
+      "query": "At what moment did the professor declare the project deadline extended?",
+      "expected_message_id": "msg_1650",
+      "target_text": "Faculty pushed submission date till Monday 5 PM.",
+      "predicted_message_id": "msg_1650",
+      "predicted_text": "Faculty pushed submission date till Monday 5 PM.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 1360.5,
+      "top_candidates": [
+        {
+          "message_id": "msg_1650",
+          "text": "Faculty pushed submission date till Monday 5 PM.",
+          "participant": "Aman Sharma",
+          "final_score": 0.6914,
+          "semantic_score": 0.7218,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1652",
+          "text": "Weekend pe acche se polish kar lete hain phir report.",
+          "participant": "Priya Patel",
+          "final_score": 0.6882,
+          "semantic_score": 0.7176,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1651",
+          "text": "Bhagwan ka shukr h! 😭🙏 breathing room mil gaya.",
+          "participant": "Rahul Verma",
+          "final_score": 0.6778,
+          "semantic_score": 0.7038,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_08",
+      "category": "zero_overlap",
+      "query": "Which vehicle arrangement did we confirm for commuting to the train terminal?",
+      "expected_message_id": "msg_3674",
+      "target_text": "Reserved two Innova cabs leaving campus 4am.",
+      "predicted_message_id": "msg_3674",
+      "predicted_text": "Reserved two Innova cabs leaving campus 4am.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 208.11,
+      "top_candidates": [
+        {
+          "message_id": "msg_3674",
+          "text": "Reserved two Innova cabs leaving campus 4am.",
+          "participant": "Rahul Verma",
+          "final_score": 1.0,
+          "semantic_score": 0.5558,
+          "lexical_score": 0.2706
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.4367,
+          "semantic_score": 0.629,
+          "lexical_score": 0.26
+        },
+        {
+          "message_id": "msg_3446",
+          "text": "Manali weather looks pleasant! Old Manali, Rohtang pass, Solang valley.",
+          "participant": "Sneha Rao",
+          "final_score": 0.4362,
+          "semantic_score": 0.6346,
+          "lexical_score": 0.241
+        }
+      ]
+    },
+    {
+      "id": "eval_09",
+      "category": "zero_overlap",
+      "query": "Which restaurant was selected to celebrate Rahul's placement offer?",
+      "expected_message_id": "msg_4537",
+      "target_text": "Treat arranged inside Barbeque Nation Saturday evening.",
+      "predicted_message_id": "msg_4537",
+      "predicted_text": "Treat arranged inside Barbeque Nation Saturday evening.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 2139.5,
+      "top_candidates": [
+        {
+          "message_id": "msg_4537",
+          "text": "Treat arranged inside Barbeque Nation Saturday evening.",
+          "participant": "Rohan Mehta",
+          "final_score": 1.0,
+          "semantic_score": 0.8001,
+          "lexical_score": 0.7668
+        },
+        {
+          "message_id": "msg_5148",
+          "text": "Yesterday's plan confirmed, team dinner at Haveli tonight.",
+          "participant": "Kabir Joshi",
+          "final_score": 0.9142,
+          "semantic_score": 0.4373,
+          "lexical_score": 0.2615
+        },
+        {
+          "message_id": "msg_4534",
+          "text": "Brothers and sisters, Cisco offer letter received!! 😭🎉🎉",
+          "participant": "Rahul Verma",
+          "final_score": 0.7304,
+          "semantic_score": 0.7348,
+          "lexical_score": 0.5769
+        }
+      ]
+    },
+    {
+      "id": "eval_10",
+      "category": "zero_overlap",
+      "query": "What sports facility did the group reserve for the weekend tournament?",
+      "expected_message_id": "msg_1774",
+      "target_text": "Apex box cricket arena slot confirmed Sunday dawn.",
+      "predicted_message_id": "msg_1774",
+      "predicted_text": "Apex box cricket arena slot confirmed Sunday dawn.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 1041.3,
+      "top_candidates": [
+        {
+          "message_id": "msg_1774",
+          "text": "Apex box cricket arena slot confirmed Sunday dawn.",
+          "participant": "Vikram Singh",
+          "final_score": 1.0,
+          "semantic_score": 0.4792,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1932",
+          "text": "Box cricket turf booked at Sector 62 from 7 to 9 PM, bring studs.",
+          "participant": "Vikram Singh",
+          "final_score": 0.2624,
+          "semantic_score": 0.4832,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1775",
+          "text": "Subah 6 baje wake up call sabko lagana Vikram.",
+          "participant": "Aman Sharma",
+          "final_score": 0.2518,
+          "semantic_score": 0.4691,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_11",
+      "category": "semantic",
+      "query": "When did we finalize our vacation plans?",
+      "expected_message_id": "msg_3769",
+      "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "predicted_message_id": "msg_3769",
+      "predicted_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 182.35,
+      "top_candidates": [
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 1.0,
+          "semantic_score": 0.629,
+          "lexical_score": 0.26
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.6109,
+          "semantic_score": 0.5242,
+          "lexical_score": 0.2501
+        },
+        {
+          "message_id": "msg_3740",
+          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+          "participant": "Rahul Verma",
+          "final_score": 0.561,
+          "semantic_score": 0.6188,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_12",
+      "category": "semantic",
+      "query": "Where did we decide to stay during the trip?",
+      "expected_message_id": "msg_3740",
+      "target_text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+      "predicted_message_id": "msg_3740",
+      "predicted_text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 236.08,
+      "top_candidates": [
+        {
+          "message_id": "msg_3740",
+          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+          "participant": "Rahul Verma",
+          "final_score": 1.0,
+          "semantic_score": 0.6778,
+          "lexical_score": 0.2316
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.4917,
+          "semantic_score": 0.6997,
+          "lexical_score": 0.268
+        },
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.4699,
+          "semantic_score": 0.674,
+          "lexical_score": 0.2578
+        }
+      ]
+    },
+    {
+      "id": "eval_13",
+      "category": "semantic",
+      "query": "What framework are we using for our machine learning APIs?",
+      "expected_message_id": "msg_1327",
+      "target_text": "FastAPI is way faster for async endpoints and ML inference.",
+      "predicted_message_id": "msg_1327",
+      "predicted_text": "FastAPI is way faster for async endpoints and ML inference.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 618.18,
+      "top_candidates": [
+        {
+          "message_id": "msg_1327",
+          "text": "FastAPI is way faster for async endpoints and ML inference.",
+          "participant": "Sneha Rao",
+          "final_score": 1.0,
+          "semantic_score": 0.7444,
+          "lexical_score": 0.1718
+        },
+        {
+          "message_id": "msg_1390",
+          "text": "FastAPI with React confirmed as our build choice.",
+          "participant": "Sneha Rao",
+          "final_score": 0.7133,
+          "semantic_score": 0.8178,
+          "lexical_score": 0.7996
+        },
+        {
+          "message_id": "msg_1385",
+          "text": "Guys, guide is asking for final framework confirmation today evening.",
+          "participant": "Aman Sharma",
+          "final_score": 0.5811,
+          "semantic_score": 0.7432,
+          "lexical_score": 0.495
+        }
+      ]
+    },
+    {
+      "id": "eval_14",
+      "category": "semantic",
+      "query": "How are we managing expenses for the college festival?",
+      "expected_message_id": "msg_4618",
+      "target_text": "Created a dedicated Splitwise group for fest receipts, upload all bills there.",
+      "predicted_message_id": "msg_4618",
+      "predicted_text": "Created a dedicated Splitwise group for fest receipts, upload all bills there.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 2856.46,
+      "top_candidates": [
+        {
+          "message_id": "msg_4618",
+          "text": "Created a dedicated Splitwise group for fest receipts, upload all bills there.",
+          "participant": "Priya Patel",
+          "final_score": 1.0,
+          "semantic_score": 0.5608,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 0.6036,
+          "semantic_score": 0.7096,
+          "lexical_score": 0.6857
+        },
+        {
+          "message_id": "msg_4674",
+          "text": "Posters need to be published on Unstop and college portal tonight.",
+          "participant": "Tanvi Malhotra",
+          "final_score": 0.4396,
+          "semantic_score": 0.6129,
+          "lexical_score": 0.3196
+        }
+      ]
+    },
+    {
+      "id": "eval_15",
+      "category": "semantic",
+      "query": "What was the reason the library was closed on Sunday?",
+      "expected_message_id": "msg_2817",
+      "target_text": "Library air conditioning maintenance scheduled for Sunday morning.",
+      "predicted_message_id": "msg_2817",
+      "predicted_text": "Library air conditioning maintenance scheduled for Sunday morning.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "is_zero_overlap": false,
+      "latency_ms": 3366.39,
+      "top_candidates": [
+        {
+          "message_id": "msg_2817",
+          "text": "Library air conditioning maintenance scheduled for Sunday morning.",
+          "participant": "Divya Nair",
+          "final_score": 1.0,
+          "semantic_score": 0.7739,
+          "lexical_score": 0.8323
+        },
+        {
+          "message_id": "msg_2818",
+          "text": "Oh okay, SAC study hall chalte hain phir.",
+          "participant": "Tanvi Malhotra",
+          "final_score": 0.2289,
+          "semantic_score": 0.6385,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1774",
+          "text": "Apex box cricket arena slot confirmed Sunday dawn.",
+          "participant": "Vikram Singh",
+          "final_score": 0.0,
+          "semantic_score": 0.2362,
+          "lexical_score": 0.2493
+        }
+      ]
+    },
+    {
+      "id": "eval_16",
+      "category": "person",
+      "query": "What did Priya say about the registration fee?",
+      "expected_message_id": "msg_4673",
+      "target_text": "Symposium registration fee will be 250 rupees per team including lunch coupons.",
+      "predicted_message_id": "msg_4673",
+      "predicted_text": "Symposium registration fee will be 250 rupees per team including lunch coupons.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "is_zero_overlap": false,
+      "latency_ms": 3330.35,
+      "top_candidates": [
+        {
+          "message_id": "msg_4673",
+          "text": "Symposium registration fee will be 250 rupees per team including lunch coupons.",
+          "participant": "Priya Patel",
+          "final_score": 0.9249,
+          "semantic_score": 0.6003,
+          "lexical_score": 0.565
+        },
+        {
+          "message_id": "msg_4725",
+          "text": "September 18 finalized for annual symposium, circular released.",
+          "participant": "Priya Patel",
+          "final_score": 0.8494,
+          "semantic_score": 0.6235,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_4618",
+          "text": "Created a dedicated Splitwise group for fest receipts, upload all bills there.",
+          "participant": "Priya Patel",
+          "final_score": 0.8243,
+          "semantic_score": 0.5608,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_17",
+      "category": "person",
+      "query": "What did Rahul say about the train tickets?",
+      "expected_message_id": "msg_3609",
+      "target_text": "Vande Bharat tickets available for July 14 morning, Tatkal not needed.",
+      "predicted_message_id": "msg_3609",
+      "predicted_text": "Vande Bharat tickets available for July 14 morning, Tatkal not needed.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 1421.15,
+      "top_candidates": [
+        {
+          "message_id": "msg_3609",
+          "text": "Vande Bharat tickets available for July 14 morning, Tatkal not needed.",
+          "participant": "Rahul Verma",
+          "final_score": 0.8887,
+          "semantic_score": 0.5364,
+          "lexical_score": 0.4941
+        },
+        {
+          "message_id": "msg_3443",
+          "text": "100% agreed! Either Goa beach or Himachal mountains.",
+          "participant": "Rahul Verma",
+          "final_score": 0.8576,
+          "semantic_score": 0.5465,
+          "lexical_score": 0.26
+        },
+        {
+          "message_id": "msg_3740",
+          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+          "participant": "Rahul Verma",
+          "final_score": 0.8475,
+          "semantic_score": 0.6188,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_18",
+      "category": "person",
+      "query": "What did Sneha say about the UI design?",
+      "expected_message_id": "msg_2311",
+      "target_text": "Figma wireframes for dashboard and landing page are updated in drive.",
+      "predicted_message_id": "msg_2311",
+      "predicted_text": "Figma wireframes for dashboard and landing page are updated in drive.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 848.34,
+      "top_candidates": [
+        {
+          "message_id": "msg_2311",
+          "text": "Figma wireframes for dashboard and landing page are updated in drive.",
+          "participant": "Sneha Rao",
+          "final_score": 1.0,
+          "semantic_score": 0.3619,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1390",
+          "text": "FastAPI with React confirmed as our build choice.",
+          "participant": "Sneha Rao",
+          "final_score": 0.4707,
+          "semantic_score": 0.3018,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1404",
+          "text": "April 10 tech review: team agreed on React frontend architecture.",
+          "participant": "Sneha Rao",
+          "final_score": 0.4629,
+          "semantic_score": 0.2822,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_19",
+      "category": "person",
+      "query": "What did Rohan say about the placement coding test?",
+      "expected_message_id": "msg_4423",
+      "target_text": "The coding test had 3 questions: dynamic programming, graphs, and SQL.",
+      "predicted_message_id": "msg_4423",
+      "predicted_text": "The coding test had 3 questions: dynamic programming, graphs, and SQL.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "is_zero_overlap": false,
+      "latency_ms": 2700.84,
+      "top_candidates": [
+        {
+          "message_id": "msg_4423",
+          "text": "The coding test had 3 questions: dynamic programming, graphs, and SQL.",
+          "participant": "Rohan Mehta",
+          "final_score": 0.9192,
+          "semantic_score": 0.5689,
+          "lexical_score": 0.6109
+        },
+        {
+          "message_id": "msg_4305",
+          "text": "August 5 placement briefing: Oracle and Cisco campus drives scheduled next week.",
+          "participant": "Rohan Mehta",
+          "final_score": 0.8546,
+          "semantic_score": 0.4965,
+          "lexical_score": 0.3731
+        },
+        {
+          "message_id": "msg_4426",
+          "text": "Yes, finding shortest path in weighted network with delay penalties.",
+          "participant": "Rohan Mehta",
+          "final_score": 0.8298,
+          "semantic_score": 0.4839,
+          "lexical_score": 0.2415
+        }
+      ]
+    },
+    {
+      "id": "eval_20",
+      "category": "person",
+      "query": "What did Vikram say about the turf booking?",
+      "expected_message_id": "msg_1932",
+      "target_text": "Box cricket turf booked at Sector 62 from 7 to 9 PM, bring studs.",
+      "predicted_message_id": "msg_1932",
+      "predicted_text": "Box cricket turf booked at Sector 62 from 7 to 9 PM, bring studs.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 654.46,
+      "top_candidates": [
+        {
+          "message_id": "msg_1932",
+          "text": "Box cricket turf booked at Sector 62 from 7 to 9 PM, bring studs.",
+          "participant": "Vikram Singh",
+          "final_score": 0.847,
+          "semantic_score": 0.4316,
+          "lexical_score": 0.4959
+        },
+        {
+          "message_id": "msg_1774",
+          "text": "Apex box cricket arena slot confirmed Sunday dawn.",
+          "participant": "Vikram Singh",
+          "final_score": 0.7417,
+          "semantic_score": 0.3543,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1775",
+          "text": "Subah 6 baje wake up call sabko lagana Vikram.",
+          "participant": "Aman Sharma",
+          "final_score": 0.3226,
+          "semantic_score": 0.3819,
+          "lexical_score": 0.1322
+        }
+      ]
+    },
+    {
+      "id": "eval_21",
+      "category": "time",
+      "query": "What did we discuss in the first week of March?",
+      "expected_message_id": "msg_0393",
+      "target_text": "March 3rd meeting notes: stage decorations budget approved by faculty advisor.",
+      "predicted_message_id": "msg_0393",
+      "predicted_text": "March 3rd meeting notes: stage decorations budget approved by faculty advisor.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 624.47,
+      "top_candidates": [
+        {
+          "message_id": "msg_0393",
+          "text": "March 3rd meeting notes: stage decorations budget approved by faculty advisor.",
+          "participant": "Ananya Gupta",
+          "final_score": 0.6532,
+          "semantic_score": 0.3223,
+          "lexical_score": 0.4948
+        },
+        {
+          "message_id": "msg_0394",
+          "text": "Great! Sponsorship team also got 4 brand confirmations for hoardings.",
+          "participant": "Tanvi Malhotra",
+          "final_score": 0.5562,
+          "semantic_score": 0.2654,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_0395",
+          "text": "Keep all GST bills safely in the accounts folder.",
+          "participant": "Priya Patel",
+          "final_score": 0.5377,
+          "semantic_score": 0.2192,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_22",
+      "category": "time",
+      "query": "What happened on July 14?",
+      "expected_message_id": "msg_3769",
+      "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "predicted_message_id": "msg_3769",
+      "predicted_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 119.98,
+      "top_candidates": [
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.7274,
+          "semantic_score": 0.1094,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.7108,
+          "semantic_score": 0.1933,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_3770",
+          "text": "I'll check the hotels then, sleep well guys! 🌲",
+          "participant": "Rahul Verma",
+          "final_score": 0.4732,
+          "semantic_score": 0.0928,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_23",
+      "category": "time",
+      "query": "What did we plan around mid-April?",
+      "expected_message_id": "msg_1404",
+      "target_text": "April 10 tech review: team agreed on React frontend architecture.",
+      "predicted_message_id": "msg_1404",
+      "predicted_text": "April 10 tech review: team agreed on React frontend architecture.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 687.92,
+      "top_candidates": [
+        {
+          "message_id": "msg_1404",
+          "text": "April 10 tech review: team agreed on React frontend architecture.",
+          "participant": "Sneha Rao",
+          "final_score": 1.0,
+          "semantic_score": 0.1869,
+          "lexical_score": 0.4171
+        },
+        {
+          "message_id": "msg_1502",
+          "text": "April 15 exam schedule published: DBMS exam on April 22, Networks on April 25.",
+          "participant": "Sneha Rao",
+          "final_score": 0.6686,
+          "semantic_score": 0.3384,
+          "lexical_score": 0.5549
+        },
+        {
+          "message_id": "msg_1385",
+          "text": "Guys, guide is asking for final framework confirmation today evening.",
+          "participant": "Aman Sharma",
+          "final_score": 0.5494,
+          "semantic_score": 0.2485,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_24",
+      "category": "time",
+      "query": "What was announced in late August?",
+      "expected_message_id": "msg_4866",
+      "target_text": "August 28 announcement: sponsorship partner confirmed with 50k grant.",
+      "predicted_message_id": "msg_4866",
+      "predicted_text": "August 28 announcement: sponsorship partner confirmed with 50k grant.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 1151.66,
+      "top_candidates": [
+        {
+          "message_id": "msg_4866",
+          "text": "August 28 announcement: sponsorship partner confirmed with 50k grant.",
+          "participant": "Tanvi Malhotra",
+          "final_score": 0.676,
+          "semantic_score": 0.3845,
+          "lexical_score": 0.4814
+        },
+        {
+          "message_id": "msg_4725",
+          "text": "September 18 finalized for annual symposium, circular released.",
+          "participant": "Priya Patel",
+          "final_score": 0.6065,
+          "semantic_score": 0.3912,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 0.5883,
+          "semantic_score": 0.3456,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_25",
+      "category": "time",
+      "query": "What did we decide about dinner yesterday?",
+      "expected_message_id": "msg_5148",
+      "target_text": "Yesterday's plan confirmed, team dinner at Haveli tonight.",
+      "predicted_message_id": "msg_5148",
+      "predicted_text": "Yesterday's plan confirmed, team dinner at Haveli tonight.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "is_zero_overlap": false,
+      "latency_ms": 110.93,
+      "top_candidates": [
+        {
+          "message_id": "msg_5148",
+          "text": "Yesterday's plan confirmed, team dinner at Haveli tonight.",
+          "participant": "Kabir Joshi",
+          "final_score": 0.4028,
+          "semantic_score": 0.5836,
+          "lexical_score": 0.6883
+        },
+        {
+          "message_id": "msg_5150",
+          "text": "See everyone at main campus circle at 8:15.",
+          "participant": "Aman Sharma",
+          "final_score": 0.1444,
+          "semantic_score": 0.4939,
+          "lexical_score": 0.2178
+        },
+        {
+          "message_id": "msg_5149",
+          "text": "Table reserved for 8:30 PM, paneer tikka on Kabir!",
+          "participant": "Rahul Verma",
+          "final_score": 0.1391,
+          "semantic_score": 0.4744,
+          "lexical_score": 0.2099
+        }
+      ]
+    },
+    {
+      "id": "eval_26",
+      "category": "person_topic",
+      "query": "What did Priya say about the budget?",
+      "expected_message_id": "msg_3522",
+      "target_text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
+      "predicted_message_id": "msg_3522",
+      "predicted_text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 2839.33,
+      "top_candidates": [
+        {
+          "message_id": "msg_3522",
+          "text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
+          "participant": "Priya Patel",
+          "final_score": 0.8735,
+          "semantic_score": 0.5444,
+          "lexical_score": 0.3713
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.8472,
+          "semantic_score": 0.5242,
+          "lexical_score": 0.2501
+        },
+        {
+          "message_id": "msg_3766",
+          "text": "Haan sabhi ne vote de diya group poll me.",
+          "participant": "Priya Patel",
+          "final_score": 0.8459,
+          "semantic_score": 0.521,
+          "lexical_score": 0.2501
+        }
+      ]
+    },
+    {
+      "id": "eval_27",
+      "category": "person_topic",
+      "query": "What did Aman say about the project repository?",
+      "expected_message_id": "msg_4048",
+      "target_text": "Created the GitHub organization and added main branch protection rules.",
+      "predicted_message_id": "msg_4048",
+      "predicted_text": "Created the GitHub organization and added main branch protection rules.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 1187.96,
+      "top_candidates": [
+        {
+          "message_id": "msg_4048",
+          "text": "Created the GitHub organization and added main branch protection rules.",
+          "participant": "Aman Sharma",
+          "final_score": 1.0,
+          "semantic_score": 0.3053,
+          "lexical_score": 0.3039
+        },
+        {
+          "message_id": "msg_1385",
+          "text": "Guys, guide is asking for final framework confirmation today evening.",
+          "participant": "Aman Sharma",
+          "final_score": 0.5185,
+          "semantic_score": 0.3093,
+          "lexical_score": 0.2985
+        },
+        {
+          "message_id": "msg_1318",
+          "text": "Team, major project guide assigned: Prof. Kulkarni.",
+          "participant": "Aman Sharma",
+          "final_score": 0.5363,
+          "semantic_score": 0.2949,
+          "lexical_score": 0.4557
+        }
+      ]
+    },
+    {
+      "id": "eval_28",
+      "category": "person_topic",
+      "query": "What did Rohan say about the internship stipend?",
+      "expected_message_id": "msg_2587",
+      "target_text": "Bangalore startup offered 45k monthly stipend for 2 months internship.",
+      "predicted_message_id": "msg_2587",
+      "predicted_text": "Bangalore startup offered 45k monthly stipend for 2 months internship.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "is_zero_overlap": false,
+      "latency_ms": 1646.3,
+      "top_candidates": [
+        {
+          "message_id": "msg_2587",
+          "text": "Bangalore startup offered 45k monthly stipend for 2 months internship.",
+          "participant": "Rohan Mehta",
+          "final_score": 0.9309,
+          "semantic_score": 0.5642,
+          "lexical_score": 0.7017
+        },
+        {
+          "message_id": "msg_2586",
+          "text": "Guys offer letter aa gaya finally! 🎉",
+          "participant": "Rohan Mehta",
+          "final_score": 0.8506,
+          "semantic_score": 0.5283,
+          "lexical_score": 0.2618
+        },
+        {
+          "message_id": "msg_4305",
+          "text": "August 5 placement briefing: Oracle and Cisco campus drives scheduled next week.",
+          "participant": "Rohan Mehta",
+          "final_score": 0.8546,
+          "semantic_score": 0.4965,
+          "lexical_score": 0.3731
+        }
+      ]
+    },
+    {
+      "id": "eval_29",
+      "category": "person_topic",
+      "query": "What did Divya say about the operating systems exam?",
+      "expected_message_id": "msg_0900",
+      "target_text": "Prof said focus on process synchronization and paging algorithms for OS mid-term.",
+      "predicted_message_id": "msg_0900",
+      "predicted_text": "Prof said focus on process synchronization and paging algorithms for OS mid-term.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 3818.08,
+      "top_candidates": [
+        {
+          "message_id": "msg_0900",
+          "text": "Prof said focus on process synchronization and paging algorithms for OS mid-term.",
+          "participant": "Divya Nair",
+          "final_score": 1.0,
+          "semantic_score": 0.913,
+          "lexical_score": 0.8859
+        },
+        {
+          "message_id": "msg_1507",
+          "text": "Networks syllabus is huge, especially subnetting and TCP sliding window.",
+          "participant": "Divya Nair",
+          "final_score": 0.5653,
+          "semantic_score": 0.4189,
+          "lexical_score": 0.3182
+        },
+        {
+          "message_id": "msg_0902",
+          "text": "Deadlock detection bank algorithm bhi dekh lena sabhi.",
+          "participant": "Rohan Mehta",
+          "final_score": 0.2044,
+          "semantic_score": 0.761,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_30",
+      "category": "person_topic",
+      "query": "What did Kabir say about the fest music system?",
+      "expected_message_id": "msg_4798",
+      "target_text": "DJ setup and 4 JBL line array speakers reserved for cultural night.",
+      "predicted_message_id": "msg_4798",
+      "predicted_text": "DJ setup and 4 JBL line array speakers reserved for cultural night.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 2135.43,
+      "top_candidates": [
+        {
+          "message_id": "msg_4798",
+          "text": "DJ setup and 4 JBL line array speakers reserved for cultural night.",
+          "participant": "Kabir Joshi",
+          "final_score": 0.8817,
+          "semantic_score": 0.5838,
+          "lexical_score": 0.3209
+        },
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 0.5367,
+          "semantic_score": 0.7096,
+          "lexical_score": 0.6857
+        },
+        {
+          "message_id": "msg_4725",
+          "text": "September 18 finalized for annual symposium, circular released.",
+          "participant": "Priya Patel",
+          "final_score": 0.4385,
+          "semantic_score": 0.6235,
+          "lexical_score": 0.261
+        }
+      ]
+    },
+    {
+      "id": "eval_31",
+      "category": "time_topic",
+      "query": "What did we discuss about exams in April?",
+      "expected_message_id": "msg_1502",
+      "target_text": "April 15 exam schedule published: DBMS exam on April 22, Networks on April 25.",
+      "predicted_message_id": "msg_1502",
+      "predicted_text": "April 15 exam schedule published: DBMS exam on April 22, Networks on April 25.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 666.28,
+      "top_candidates": [
+        {
+          "message_id": "msg_1502",
+          "text": "April 15 exam schedule published: DBMS exam on April 22, Networks on April 25.",
+          "participant": "Sneha Rao",
+          "final_score": 0.941,
+          "semantic_score": 0.623,
+          "lexical_score": 0.6117
+        },
+        {
+          "message_id": "msg_1506",
+          "text": "Bhai back to back exams h dono! Ek din ka bhi gap nahi diya.",
+          "participant": "Rahul Verma",
+          "final_score": 0.9388,
+          "semantic_score": 0.6866,
+          "lexical_score": 0.4275
+        },
+        {
+          "message_id": "msg_1507",
+          "text": "Networks syllabus is huge, especially subnetting and TCP sliding window.",
+          "participant": "Divya Nair",
+          "final_score": 0.9065,
+          "semantic_score": 0.6223,
+          "lexical_score": 0.3835
+        }
+      ]
+    },
+    {
+      "id": "eval_32",
+      "category": "time_topic",
+      "query": "What did we discuss about the trip in July?",
+      "expected_message_id": "msg_3713",
+      "target_text": "July 12 itinerary draft: Day 1 Solang valley, Day 2 Kasol trek, Day 3 local market.",
+      "predicted_message_id": "msg_3713",
+      "predicted_text": "July 12 itinerary draft: Day 1 Solang valley, Day 2 Kasol trek, Day 3 local market.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 204.12,
+      "top_candidates": [
+        {
+          "message_id": "msg_3713",
+          "text": "July 12 itinerary draft: Day 1 Solang valley, Day 2 Kasol trek, Day 3 local market.",
+          "participant": "Priya Patel",
+          "final_score": 1.0,
+          "semantic_score": 0.543,
+          "lexical_score": 0.5106
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.8906,
+          "semantic_score": 0.629,
+          "lexical_score": 0.26
+        },
+        {
+          "message_id": "msg_3740",
+          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+          "participant": "Rahul Verma",
+          "final_score": 0.8761,
+          "semantic_score": 0.6188,
+          "lexical_score": 0.1904
+        }
+      ]
+    },
+    {
+      "id": "eval_33",
+      "category": "time_topic",
+      "query": "What did we discuss about placements in August?",
+      "expected_message_id": "msg_4305",
+      "target_text": "August 5 placement briefing: Oracle and Cisco campus drives scheduled next week.",
+      "predicted_message_id": "msg_4305",
+      "predicted_text": "August 5 placement briefing: Oracle and Cisco campus drives scheduled next week.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 535.58,
+      "top_candidates": [
+        {
+          "message_id": "msg_4305",
+          "text": "August 5 placement briefing: Oracle and Cisco campus drives scheduled next week.",
+          "participant": "Rohan Mehta",
+          "final_score": 0.8653,
+          "semantic_score": 0.4965,
+          "lexical_score": 0.4446
+        },
+        {
+          "message_id": "msg_4306",
+          "text": "Eligibility criteria is 7.5 CGPA with zero active backlogs.",
+          "participant": "Divya Nair",
+          "final_score": 0.767,
+          "semantic_score": 0.4176,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_4307",
+          "text": "Revise core CS subjects: OS, DBMS, OOP, and CN.",
+          "participant": "Aman Sharma",
+          "final_score": 0.7621,
+          "semantic_score": 0.4052,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_34",
+      "category": "time_topic",
+      "query": "What did we discuss about project submission in May?",
+      "expected_message_id": "msg_2309",
+      "target_text": "May 18 minor project demo: report spiral binding and IEEE format mandatory.",
+      "predicted_message_id": "msg_2309",
+      "predicted_text": "May 18 minor project demo: report spiral binding and IEEE format mandatory.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "is_zero_overlap": false,
+      "latency_ms": 1441.05,
+      "top_candidates": [
+        {
+          "message_id": "msg_2309",
+          "text": "May 18 minor project demo: report spiral binding and IEEE format mandatory.",
+          "participant": "Aman Sharma",
+          "final_score": 0.8004,
+          "semantic_score": 0.3009,
+          "lexical_score": 0.5338
+        },
+        {
+          "message_id": "msg_2310",
+          "text": "I have IEEE LaTeX template ready. Will share git repo.",
+          "participant": "Divya Nair",
+          "final_score": 0.7074,
+          "semantic_score": 0.2685,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_2311",
+          "text": "Figma wireframes for dashboard and landing page are updated in drive.",
+          "participant": "Sneha Rao",
+          "final_score": 0.6816,
+          "semantic_score": 0.2039,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_35",
+      "category": "decision",
+      "query": "What did we finally decide about the venue?",
+      "expected_message_id": "msg_4720",
+      "target_text": "Auditorium slot approved, booking receipt signed.",
+      "predicted_message_id": "msg_4720",
+      "predicted_text": "Auditorium slot approved, booking receipt signed.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 641.77,
+      "top_candidates": [
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 1.0,
+          "semantic_score": 0.7096,
+          "lexical_score": 0.6857
+        },
+        {
+          "message_id": "msg_4725",
+          "text": "September 18 finalized for annual symposium, circular released.",
+          "participant": "Priya Patel",
+          "final_score": 0.6776,
+          "semantic_score": 0.6235,
+          "lexical_score": 0.4699
+        },
+        {
+          "message_id": "msg_4920",
+          "text": "Awesome, send pdf preview when done Divya.",
+          "participant": "Aman Sharma",
+          "final_score": 0.557,
+          "semantic_score": 0.61,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_36",
+      "category": "decision",
+      "query": "What was the final decision on the trip destination?",
+      "expected_message_id": "msg_3769",
+      "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "predicted_message_id": "msg_3769",
+      "predicted_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 1498.02,
+      "top_candidates": [
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 1.0,
+          "semantic_score": 0.6997,
+          "lexical_score": 0.5369
+        },
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.6455,
+          "semantic_score": 0.674,
+          "lexical_score": 0.5972
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.6383,
+          "semantic_score": 0.5883,
+          "lexical_score": 0.2354
+        }
+      ]
+    },
+    {
+      "id": "eval_37",
+      "category": "decision",
+      "query": "What tech stack did we agree to use?",
+      "expected_message_id": "msg_1390",
+      "target_text": "FastAPI with React confirmed as our build choice.",
+      "predicted_message_id": "msg_1390",
+      "predicted_text": "FastAPI with React confirmed as our build choice.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 2833.52,
+      "top_candidates": [
+        {
+          "message_id": "msg_1390",
+          "text": "FastAPI with React confirmed as our build choice.",
+          "participant": "Sneha Rao",
+          "final_score": 0.798,
+          "semantic_score": 0.8178,
+          "lexical_score": 0.7996
+        },
+        {
+          "message_id": "msg_1389",
+          "text": "Done from my side too. Let's make it official.",
+          "participant": "Priya Patel",
+          "final_score": 0.6361,
+          "semantic_score": 0.7858,
+          "lexical_score": 0.0
+        },
+        {
+          "message_id": "msg_1385",
+          "text": "Guys, guide is asking for final framework confirmation today evening.",
+          "participant": "Aman Sharma",
+          "final_score": 0.6169,
+          "semantic_score": 0.7432,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_38",
+      "category": "decision",
+      "query": "What was the final decision regarding event dates?",
+      "expected_message_id": "msg_4725",
+      "target_text": "September 18 finalized for annual symposium, circular released.",
+      "predicted_message_id": "msg_4725",
+      "predicted_text": "September 18 finalized for annual symposium, circular released.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 2139.33,
+      "top_candidates": [
+        {
+          "message_id": "msg_4725",
+          "text": "September 18 finalized for annual symposium, circular released.",
+          "participant": "Priya Patel",
+          "final_score": 1.0,
+          "semantic_score": 0.6235,
+          "lexical_score": 0.345
+        },
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 0.7379,
+          "semantic_score": 0.7096,
+          "lexical_score": 0.6857
+        },
+        {
+          "message_id": "msg_4920",
+          "text": "Awesome, send pdf preview when done Divya.",
+          "participant": "Aman Sharma",
+          "final_score": 0.557,
+          "semantic_score": 0.61,
+          "lexical_score": 0.0
+        }
+      ]
+    },
+    {
+      "id": "eval_39",
+      "category": "hinglish",
+      "query": "trip ka final decision kab hua?",
+      "expected_message_id": "msg_3769",
+      "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "predicted_message_id": "msg_3769",
+      "predicted_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 1663.08,
+      "top_candidates": [
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.9367,
+          "semantic_score": 0.629,
+          "lexical_score": 0.5369
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.8609,
+          "semantic_score": 0.5242,
+          "lexical_score": 0.2501
+        },
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.8429,
+          "semantic_score": 0.5572,
+          "lexical_score": 0.5972
+        }
+      ]
+    },
+    {
+      "id": "eval_40",
+      "category": "typo_informal",
+      "query": "manali kab fnl hua tha?",
+      "expected_message_id": "msg_3769",
+      "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "predicted_message_id": "msg_3769",
+      "predicted_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "is_zero_overlap": false,
+      "latency_ms": 1553.89,
+      "top_candidates": [
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.9445,
+          "semantic_score": 0.629,
+          "lexical_score": 0.6149
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.8609,
+          "semantic_score": 0.5242,
+          "lexical_score": 0.2501
+        },
+        {
+          "message_id": "msg_3740",
+          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+          "participant": "Rahul Verma",
+          "final_score": 0.8445,
+          "semantic_score": 0.6188,
+          "lexical_score": 0.3356
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Python & Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+*.so
+.Python
+build/
+*.egg-info/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "p01",
+    "name": "Aman Sharma",
+    "handle": "aman_s",
+    "role": "Tech Lead & Group Admin",
+    "color": "#6366F1",
+    "avatar": "AS"
+  },
+  {
+    "id": "p02",
+    "name": "Priya Patel",
+    "handle": "priya_p",
+    "role": "Finance & Event Coordinator",
+    "color": "#EC4899",
+    "avatar": "PP"
+  },
+  {
+    "id": "p03",
+    "name": "Rahul Verma",
+    "handle": "rahul_v",
+    "role": "Logistics & Food In-Charge",
+    "color": "#F59E0B",
+    "avatar": "RV"
+  },
+  {
+    "id": "p04",
+    "name": "Sneha Rao",
+    "handle": "sneha_r",
+    "role": "Frontend Dev & Class Rep",
+    "color": "#10B981",
+    "avatar": "SR"
+  },
+  {
+    "id": "p05",
+    "name": "Rohan Mehta",
+    "handle": "rohan_m",
+    "role": "Backend Dev & Placement Rep",
+    "color": "#3B82F6",
+    "avatar": "RM"
+  },
+  {
+    "id": "p06",
+    "name": "Ananya Gupta",
+    "handle": "ananya_g",
+    "role": "Fest Organizer & Design Lead",
+    "color": "#8B5CF6",
+    "avatar": "AG"
+  },
+  {
+    "id": "p07",
+    "name": "Vikram Singh",
+    "handle": "vikram_s",
+    "role": "Sports Secretary & Transit",
+    "color": "#EF4444",
+    "avatar": "VS"
+  },
+  {
+    "id": "p08",
+    "name": "Divya Nair",
+    "handle": "divya_n",
+    "role": "Academics & Seminar Lead",
+    "color": "#14B8A6",
+    "avatar": "DN"
+  },
+  {
+    "id": "p09",
+    "name": "Kabir Joshi",
+    "handle": "kabir_j",
+    "role": "Cultural Head & Memes",
+    "color": "#F97316",
+    "avatar": "KJ"
+  },
+  {
+    "id": "p10",
+    "name": "Tanvi Malhotra",
+    "handle": "tanvi_m",
+    "role": "Sponsorship & Documentation",
+    "color": "#06B6D4",
+    "avatar": "TM"
+  }
+]

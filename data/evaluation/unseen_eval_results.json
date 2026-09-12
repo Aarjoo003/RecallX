@@ -1,0 +1,839 @@
+{
+  "timestamp": "2026-09-12T16:48:54",
+  "total_queries": 25,
+  "overall_top1_accuracy": 100.0,
+  "overall_top3_accuracy": 100.0,
+  "avg_latency_ms": 1281.57,
+  "category_breakdown": {
+    "hinglish_conversational": {
+      "total": 10,
+      "top1_correct": 10,
+      "top3_correct": 10,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "short_query": {
+      "total": 4,
+      "top1_correct": 4,
+      "top3_correct": 4,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "conversational_paraphrase": {
+      "total": 9,
+      "top1_correct": 9,
+      "top3_correct": 9,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    },
+    "typo_code_mixed": {
+      "total": 2,
+      "top1_correct": 2,
+      "top3_correct": 2,
+      "top1_accuracy": 100.0,
+      "top3_accuracy": 100.0
+    }
+  },
+  "results": [
+    {
+      "id": "unseen_01",
+      "category": "hinglish_conversational",
+      "query": "mera bday kab hai",
+      "expected_message_id": "msg_5201",
+      "predicted_message_id": "msg_5201",
+      "predicted_text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "latency_ms": 156.59,
+      "top_candidates": [
+        {
+          "message_id": "msg_5201",
+          "text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+          "participant": "Rohan Mehta",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5202",
+          "text": "Haan 18 August confirmed hai, chocolate truffle cake order kar diya maine Old Bakery se",
+          "participant": "Sneha Rao",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5204",
+          "text": "Haha thanks guys, birthday treat meri taraf se weekend pe pakki",
+          "participant": "Aman Sharma",
+          "final_score": 1.0
+        }
+      ]
+    },
+    {
+      "id": "unseen_02",
+      "category": "hinglish_conversational",
+      "query": "mera birthday kis date ko hai",
+      "expected_message_id": "msg_5201",
+      "predicted_message_id": "msg_5201",
+      "predicted_text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "latency_ms": 139.37,
+      "top_candidates": [
+        {
+          "message_id": "msg_5201",
+          "text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+          "participant": "Rohan Mehta",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5202",
+          "text": "Haan 18 August confirmed hai, chocolate truffle cake order kar diya maine Old Bakery se",
+          "participant": "Sneha Rao",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5204",
+          "text": "Haha thanks guys, birthday treat meri taraf se weekend pe pakki",
+          "participant": "Aman Sharma",
+          "final_score": 1.0
+        }
+      ]
+    },
+    {
+      "id": "unseen_03",
+      "category": "hinglish_conversational",
+      "query": "birthday party celebration kahan aur kitne baje hai",
+      "expected_message_id": "msg_5203",
+      "predicted_message_id": "msg_5203",
+      "predicted_text": "Sab log Tuesday 7 PM hostel common room me aana birthday party celebration ke liye",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 3,
+      "latency_ms": 287.67,
+      "top_candidates": [
+        {
+          "message_id": "msg_5203",
+          "text": "Sab log Tuesday 7 PM hostel common room me aana birthday party celebration ke liye",
+          "participant": "Priya Patel",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5201",
+          "text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+          "participant": "Rohan Mehta",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5202",
+          "text": "Haan 18 August confirmed hai, chocolate truffle cake order kar diya maine Old Bakery se",
+          "participant": "Sneha Rao",
+          "final_score": 1.0
+        }
+      ]
+    },
+    {
+      "id": "unseen_04",
+      "category": "hinglish_conversational",
+      "query": "cake kisne order kiya tha",
+      "expected_message_id": "msg_5202",
+      "predicted_message_id": "msg_5202",
+      "predicted_text": "Haan 18 August confirmed hai, chocolate truffle cake order kar diya maine Old Bakery se",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "latency_ms": 2884.96,
+      "top_candidates": [
+        {
+          "message_id": "msg_5202",
+          "text": "Haan 18 August confirmed hai, chocolate truffle cake order kar diya maine Old Bakery se",
+          "participant": "Sneha Rao",
+          "final_score": 0.8166
+        },
+        {
+          "message_id": "msg_5201",
+          "text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+          "participant": "Rohan Mehta",
+          "final_score": 0.8141
+        },
+        {
+          "message_id": "msg_5204",
+          "text": "Haha thanks guys, birthday treat meri taraf se weekend pe pakki",
+          "participant": "Aman Sharma",
+          "final_score": 0.799
+        }
+      ]
+    },
+    {
+      "id": "unseen_05",
+      "category": "hinglish_conversational",
+      "query": "birthday treat kiski taraf se thi",
+      "expected_message_id": "msg_5204",
+      "predicted_message_id": "msg_5204",
+      "predicted_text": "Haha thanks guys, birthday treat meri taraf se weekend pe pakki",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 3,
+      "latency_ms": 306.9,
+      "top_candidates": [
+        {
+          "message_id": "msg_5204",
+          "text": "Haha thanks guys, birthday treat meri taraf se weekend pe pakki",
+          "participant": "Aman Sharma",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5201",
+          "text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+          "participant": "Rohan Mehta",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5202",
+          "text": "Haan 18 August confirmed hai, chocolate truffle cake order kar diya maine Old Bakery se",
+          "participant": "Sneha Rao",
+          "final_score": 1.0
+        }
+      ]
+    },
+    {
+      "id": "unseen_06",
+      "category": "hinglish_conversational",
+      "query": "trip ka final kya hua",
+      "expected_message_id": "msg_3769",
+      "predicted_message_id": "msg_3769",
+      "predicted_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "latency_ms": 1544.96,
+      "top_candidates": [
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.9367
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.8609
+        },
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.8429
+        }
+      ]
+    },
+    {
+      "id": "unseen_07",
+      "category": "hinglish_conversational",
+      "query": "vacation ke dates kya locked hue the",
+      "expected_message_id": "msg_3767",
+      "predicted_message_id": "msg_3767",
+      "predicted_text": "14-18 dates are locked from my side too.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "latency_ms": 191.49,
+      "top_candidates": [
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.7343
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.6867
+        },
+        {
+          "message_id": "msg_3442",
+          "text": "Semesters 6 is officially over! We desperately need a group trip before placements start.",
+          "participant": "Kabir Joshi",
+          "final_score": 0.6756
+        }
+      ]
+    },
+    {
+      "id": "unseen_08",
+      "category": "hinglish_conversational",
+      "query": "trip ke liye budget limit kitna fix hua",
+      "expected_message_id": "msg_3542",
+      "predicted_message_id": "msg_3542",
+      "predicted_text": "Sabhi log suno, total limit 8k fix kar di.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "latency_ms": 2606.41,
+      "top_candidates": [
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.4367
+        },
+        {
+          "message_id": "msg_3446",
+          "text": "Manali weather looks pleasant! Old Manali, Rohtang pass, Solang valley.",
+          "participant": "Sneha Rao",
+          "final_score": 0.4362
+        }
+      ]
+    },
+    {
+      "id": "unseen_09",
+      "category": "hinglish_conversational",
+      "query": "cabs konsi book ki trip ke liye",
+      "expected_message_id": "msg_3674",
+      "predicted_message_id": "msg_3674",
+      "predicted_text": "Reserved two Innova cabs leaving campus 4am.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "latency_ms": 201.76,
+      "top_candidates": [
+        {
+          "message_id": "msg_3674",
+          "text": "Reserved two Innova cabs leaving campus 4am.",
+          "participant": "Rahul Verma",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.5177
+        },
+        {
+          "message_id": "msg_3446",
+          "text": "Manali weather looks pleasant! Old Manali, Rohtang pass, Solang valley.",
+          "participant": "Sneha Rao",
+          "final_score": 0.5098
+        }
+      ]
+    },
+    {
+      "id": "unseen_10",
+      "category": "hinglish_conversational",
+      "query": "stay kahan book kiya trip ka",
+      "expected_message_id": "msg_3740",
+      "predicted_message_id": "msg_3740",
+      "predicted_text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "latency_ms": 188.51,
+      "top_candidates": [
+        {
+          "message_id": "msg_3740",
+          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+          "participant": "Rahul Verma",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.5747
+        },
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.4539
+        }
+      ]
+    },
+    {
+      "id": "unseen_11",
+      "category": "short_query",
+      "query": "bday kab?",
+      "expected_message_id": "msg_5201",
+      "predicted_message_id": "msg_5201",
+      "predicted_text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "latency_ms": 180.18,
+      "top_candidates": [
+        {
+          "message_id": "msg_5201",
+          "text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+          "participant": "Rohan Mehta",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5202",
+          "text": "Haan 18 August confirmed hai, chocolate truffle cake order kar diya maine Old Bakery se",
+          "participant": "Sneha Rao",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5204",
+          "text": "Haha thanks guys, birthday treat meri taraf se weekend pe pakki",
+          "participant": "Aman Sharma",
+          "final_score": 1.0
+        }
+      ]
+    },
+    {
+      "id": "unseen_12",
+      "category": "short_query",
+      "query": "when did we lock trip dates",
+      "expected_message_id": "msg_3767",
+      "predicted_message_id": "msg_3767",
+      "predicted_text": "14-18 dates are locked from my side too.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "latency_ms": 140.74,
+      "top_candidates": [
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.6779
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.6109
+        }
+      ]
+    },
+    {
+      "id": "unseen_13",
+      "category": "short_query",
+      "query": "maximum expenditure budget limit",
+      "expected_message_id": "msg_3542",
+      "predicted_message_id": "msg_3542",
+      "predicted_text": "Sabhi log suno, total limit 8k fix kar di.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "latency_ms": 1911.73,
+      "top_candidates": [
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.4839
+        },
+        {
+          "message_id": "msg_3446",
+          "text": "Manali weather looks pleasant! Old Manali, Rohtang pass, Solang valley.",
+          "participant": "Sneha Rao",
+          "final_score": 0.5098
+        }
+      ]
+    },
+    {
+      "id": "unseen_14",
+      "category": "short_query",
+      "query": "tech stack",
+      "expected_message_id": "msg_1390",
+      "predicted_message_id": "msg_1390",
+      "predicted_text": "FastAPI with React confirmed as our build choice.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "latency_ms": 3138.26,
+      "top_candidates": [
+        {
+          "message_id": "msg_1390",
+          "text": "FastAPI with React confirmed as our build choice.",
+          "participant": "Sneha Rao",
+          "final_score": 0.7133
+        },
+        {
+          "message_id": "msg_1385",
+          "text": "Guys, guide is asking for final framework confirmation today evening.",
+          "participant": "Aman Sharma",
+          "final_score": 0.6003
+        },
+        {
+          "message_id": "msg_1320",
+          "text": "He asked us to submit architecture and framework selections before April 12.",
+          "participant": "Rohan Mehta",
+          "final_score": 0.6086
+        }
+      ]
+    },
+    {
+      "id": "unseen_15",
+      "category": "conversational_paraphrase",
+      "query": "project submission deadline kab tak push hui thi",
+      "expected_message_id": "msg_1650",
+      "predicted_message_id": "msg_1650",
+      "predicted_text": "Faculty pushed submission date till Monday 5 PM.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "latency_ms": 1394.91,
+      "top_candidates": [
+        {
+          "message_id": "msg_1650",
+          "text": "Faculty pushed submission date till Monday 5 PM.",
+          "participant": "Aman Sharma",
+          "final_score": 0.7535
+        },
+        {
+          "message_id": "msg_1652",
+          "text": "Weekend pe acche se polish kar lete hain phir report.",
+          "participant": "Priya Patel",
+          "final_score": 0.6498
+        },
+        {
+          "message_id": "msg_1651",
+          "text": "Bhagwan ka shukr h! \ud83d\ude2d\ud83d\ude4f breathing room mil gaya.",
+          "participant": "Rahul Verma",
+          "final_score": 0.6335
+        }
+      ]
+    },
+    {
+      "id": "unseen_16",
+      "category": "conversational_paraphrase",
+      "query": "github organization kisne create kiya",
+      "expected_message_id": "msg_4048",
+      "predicted_message_id": "msg_4048",
+      "predicted_text": "Created the GitHub organization and added main branch protection rules.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "latency_ms": 96.78,
+      "top_candidates": [
+        {
+          "message_id": "msg_4048",
+          "text": "Created the GitHub organization and added main branch protection rules.",
+          "participant": "Aman Sharma",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_4050",
+          "text": "Added FastAPI skeleton with Poetry and pre-commit hooks.",
+          "participant": "Rohan Mehta",
+          "final_score": 0.2121
+        },
+        {
+          "message_id": "msg_4049",
+          "text": "Cloned repo. Setting up Vite frontend template now.",
+          "participant": "Sneha Rao",
+          "final_score": 0.1699
+        }
+      ]
+    },
+    {
+      "id": "unseen_17",
+      "category": "conversational_paraphrase",
+      "query": "wireframes kisne banaye the dashboard ke",
+      "expected_message_id": "msg_2311",
+      "predicted_message_id": "msg_2311",
+      "predicted_text": "Figma wireframes for dashboard and landing page are updated in drive.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "latency_ms": 373.75,
+      "top_candidates": [
+        {
+          "message_id": "msg_2311",
+          "text": "Figma wireframes for dashboard and landing page are updated in drive.",
+          "participant": "Sneha Rao",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_2309",
+          "text": "May 18 minor project demo: report spiral binding and IEEE format mandatory.",
+          "participant": "Aman Sharma",
+          "final_score": 0.2195
+        },
+        {
+          "message_id": "msg_2310",
+          "text": "I have IEEE LaTeX template ready. Will share git repo.",
+          "participant": "Divya Nair",
+          "final_score": 0.2192
+        }
+      ]
+    },
+    {
+      "id": "unseen_18",
+      "category": "conversational_paraphrase",
+      "query": "annual symposium kis date ko hone wala hai",
+      "expected_message_id": "msg_4725",
+      "predicted_message_id": "msg_4725",
+      "predicted_text": "September 18 finalized for annual symposium, circular released.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "latency_ms": 2983.54,
+      "top_candidates": [
+        {
+          "message_id": "msg_4725",
+          "text": "September 18 finalized for annual symposium, circular released.",
+          "participant": "Priya Patel",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 0.6036
+        },
+        {
+          "message_id": "msg_4920",
+          "text": "Awesome, send pdf preview when done Divya.",
+          "participant": "Aman Sharma",
+          "final_score": 0.4052
+        }
+      ]
+    },
+    {
+      "id": "unseen_19",
+      "category": "conversational_paraphrase",
+      "query": "auditorium slot kab approve hua",
+      "expected_message_id": "msg_4720",
+      "predicted_message_id": "msg_4720",
+      "predicted_text": "Auditorium slot approved, booking receipt signed.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "latency_ms": 574.62,
+      "top_candidates": [
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 0.8536
+        },
+        {
+          "message_id": "msg_4717",
+          "text": "Did he allow the Main Auditorium or are we stuck with SAC Hall?",
+          "participant": "Aman Sharma",
+          "final_score": 0.7495
+        },
+        {
+          "message_id": "msg_4725",
+          "text": "September 18 finalized for annual symposium, circular released.",
+          "participant": "Priya Patel",
+          "final_score": 0.6176
+        }
+      ]
+    },
+    {
+      "id": "unseen_20",
+      "category": "conversational_paraphrase",
+      "query": "fest ke kharche manage karne ke liye kya banaya",
+      "expected_message_id": "msg_4618",
+      "predicted_message_id": "msg_4618",
+      "predicted_text": "Created a dedicated Splitwise group for fest receipts, upload all bills there.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 1,
+      "latency_ms": 624.7,
+      "top_candidates": [
+        {
+          "message_id": "msg_4618",
+          "text": "Created a dedicated Splitwise group for fest receipts, upload all bills there.",
+          "participant": "Priya Patel",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_4720",
+          "text": "Auditorium slot approved, booking receipt signed.",
+          "participant": "Ananya Gupta",
+          "final_score": 0.6036
+        },
+        {
+          "message_id": "msg_4920",
+          "text": "Awesome, send pdf preview when done Divya.",
+          "participant": "Aman Sharma",
+          "final_score": 0.4267
+        }
+      ]
+    },
+    {
+      "id": "unseen_21",
+      "category": "conversational_paraphrase",
+      "query": "placement dinner party kahan organise hui thi",
+      "expected_message_id": "msg_4537",
+      "predicted_message_id": "msg_4537",
+      "predicted_text": "Treat arranged inside Barbeque Nation Saturday evening.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 0,
+      "latency_ms": 2374.65,
+      "top_candidates": [
+        {
+          "message_id": "msg_4537",
+          "text": "Treat arranged inside Barbeque Nation Saturday evening.",
+          "participant": "Rohan Mehta",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5148",
+          "text": "Yesterday's plan confirmed, team dinner at Haveli tonight.",
+          "participant": "Kabir Joshi",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5205",
+          "text": "Birthday boy se party to banti hai, placement treat ke saath combine mat karna bhai",
+          "participant": "Vikram Singh",
+          "final_score": 0.5499
+        }
+      ]
+    },
+    {
+      "id": "unseen_22",
+      "category": "conversational_paraphrase",
+      "query": "sunday box cricket match kahan confirm hua",
+      "expected_message_id": "msg_1774",
+      "predicted_message_id": "msg_1774",
+      "predicted_text": "Apex box cricket arena slot confirmed Sunday dawn.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 3,
+      "latency_ms": 1004.94,
+      "top_candidates": [
+        {
+          "message_id": "msg_1774",
+          "text": "Apex box cricket arena slot confirmed Sunday dawn.",
+          "participant": "Vikram Singh",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_1932",
+          "text": "Box cricket turf booked at Sector 62 from 7 to 9 PM, bring studs.",
+          "participant": "Vikram Singh",
+          "final_score": 0.4536
+        },
+        {
+          "message_id": "msg_1772",
+          "text": "Yes! 8v8 box cricket match, losers pay canteen chai-samosa.",
+          "participant": "Kabir Joshi",
+          "final_score": 0.4666
+        }
+      ]
+    },
+    {
+      "id": "unseen_23",
+      "category": "conversational_paraphrase",
+      "query": "library kyu band thi sunday ko",
+      "expected_message_id": "msg_2817",
+      "predicted_message_id": "msg_2817",
+      "predicted_text": "Library air conditioning maintenance scheduled for Sunday morning.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "latency_ms": 3305.59,
+      "top_candidates": [
+        {
+          "message_id": "msg_2817",
+          "text": "Library air conditioning maintenance scheduled for Sunday morning.",
+          "participant": "Divya Nair",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_2818",
+          "text": "Oh okay, SAC study hall chalte hain phir.",
+          "participant": "Tanvi Malhotra",
+          "final_score": 0.2289
+        },
+        {
+          "message_id": "msg_0204",
+          "text": "library chalte h Shaam ko, viva preparation karni h",
+          "participant": "Vikram Singh",
+          "final_score": 0.169
+        }
+      ]
+    },
+    {
+      "id": "unseen_24",
+      "category": "typo_code_mixed",
+      "query": "manali final kb hua tha",
+      "expected_message_id": "msg_3769",
+      "predicted_message_id": "msg_3769",
+      "predicted_text": "Done bhai, Manali final. I'll book tomorrow.",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 2,
+      "latency_ms": 1716.97,
+      "top_candidates": [
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.9445
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.8609
+        },
+        {
+          "message_id": "msg_3740",
+          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+          "participant": "Rahul Verma",
+          "final_score": 0.8515
+        }
+      ]
+    },
+    {
+      "id": "unseen_25",
+      "category": "typo_code_mixed",
+      "query": "bday party hostel common room me kitne bje h",
+      "expected_message_id": "msg_5203",
+      "predicted_message_id": "msg_5203",
+      "predicted_text": "Sab log Tuesday 7 PM hostel common room me aana birthday party celebration ke liye",
+      "top1_match": true,
+      "top3_match": true,
+      "word_overlap": 4,
+      "latency_ms": 3709.19,
+      "top_candidates": [
+        {
+          "message_id": "msg_5203",
+          "text": "Sab log Tuesday 7 PM hostel common room me aana birthday party celebration ke liye",
+          "participant": "Priya Patel",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5201",
+          "text": "Aman ka birthday 18 August ko hai na sab yaad rakhna",
+          "participant": "Rohan Mehta",
+          "final_score": 1.0
+        },
+        {
+          "message_id": "msg_5202",
+          "text": "Haan 18 August confirmed hai, chocolate truffle cake order kar diya maine Old Bakery se",
+          "participant": "Sneha Rao",
+          "final_score": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dec_01",
+    "title": "Trip Destination Finalized",
+    "topic": "Trip Planning",
+    "decision": "Manali finalized for vacation (July 14-18)",
+    "message_id": "msg_3769",
+    "participant": "Aman Sharma",
+    "timestamp": "2026-07-14T22:40:00",
+    "context_summary": "Following debates between Goa, Manali, and Rishikesh, group locked Manali within 8k budget.",
+    "status": "Confirmed",
+    "icon": "mountain"
+  },
+  {
+    "id": "dec_02",
+    "title": "Capstone Tech Stack Selected",
+    "topic": "Major Project",
+    "decision": "FastAPI backend + React frontend chosen",
+    "message_id": "msg_1390",
+    "participant": "Sneha Rao",
+    "timestamp": "2026-04-10T20:28:00",
+    "context_summary": "Selected FastAPI for fast async ML embeddings and React with Tailwind for modern UI.",
+    "status": "Confirmed",
+    "icon": "code"
+  },
+  {
+    "id": "dec_03",
+    "title": "Symposium Venue & Date Confirmed",
+    "topic": "Innovate 2026",
+    "decision": "Main Auditorium approved for September 18",
+    "message_id": "msg_4720",
+    "participant": "Ananya Gupta",
+    "timestamp": "2026-08-22T14:39:00",
+    "context_summary": "Dean approved Main Auditorium over SAC Hall; official college circular issued.",
+    "status": "Confirmed",
+    "icon": "calendar"
+  },
+  {
+    "id": "dec_04",
+    "title": "Trip Budget Cap Fixed",
+    "topic": "Trip Logistics",
+    "decision": "Maximum expenditure limited to ₹8,000 per person",
+    "message_id": "msg_3542",
+    "participant": "Priya Patel",
+    "timestamp": "2026-07-06T13:02:00",
+    "context_summary": "Agreed hotel ceiling at 2k/night to keep overall cost within student budget.",
+    "status": "Confirmed",
+    "icon": "wallet"
+  }
+]

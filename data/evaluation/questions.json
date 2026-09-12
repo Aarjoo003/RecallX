@@ -1,0 +1,531 @@
+[
+  {
+    "id": "eval_01",
+    "category": "zero_overlap",
+    "query": "When did we finally settle on the destination?",
+    "expected_message_id": "msg_3769",
+    "description": "Zero-word overlap query asking about vacation destination confirmation",
+    "expected_participant": "Aman Sharma",
+    "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+    "target_timestamp": "2026-07-14T22:40:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_02",
+    "category": "zero_overlap",
+    "query": "Which technical stack was picked for the capstone?",
+    "expected_message_id": "msg_1390",
+    "description": "Zero-word overlap query on capstone technology choice",
+    "expected_participant": "Sneha Rao",
+    "target_text": "FastAPI with React confirmed as our build choice.",
+    "target_timestamp": "2026-04-10T20:28:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_03",
+    "category": "zero_overlap",
+    "query": "Where will the grand college summit take place?",
+    "expected_message_id": "msg_4720",
+    "description": "Zero-word overlap query on symposium venue approval",
+    "expected_participant": "Ananya Gupta",
+    "target_text": "Auditorium slot approved, booking receipt signed.",
+    "target_timestamp": "2026-08-22T14:39:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_04",
+    "category": "zero_overlap",
+    "query": "What is the maximum expenditure allowed per head?",
+    "expected_message_id": "msg_3542",
+    "description": "Zero-word overlap query on trip financial ceiling",
+    "expected_participant": "Priya Patel",
+    "target_text": "Sabhi log suno, total limit 8k fix kar di.",
+    "target_timestamp": "2026-07-06T13:02:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_05",
+    "category": "zero_overlap",
+    "query": "Who accepted responsibility for creating the slide presentation?",
+    "expected_message_id": "msg_4919",
+    "description": "Zero-word overlap query on presentation deck owner",
+    "expected_participant": "Divya Nair",
+    "target_text": "Divya handles PPT compilation tonight.",
+    "target_timestamp": "2026-08-30T21:02:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_06",
+    "category": "zero_overlap",
+    "query": "What caused the campus network outage?",
+    "expected_message_id": "msg_0632",
+    "description": "Zero-word overlap query on internet fiber cut",
+    "expected_participant": "Vikram Singh",
+    "target_text": "Severed optical fiber cable near main hostel gate.",
+    "target_timestamp": "2026-03-12T16:51:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_07",
+    "category": "zero_overlap",
+    "query": "At what moment did the professor declare the project deadline extended?",
+    "expected_message_id": "msg_1650",
+    "description": "Zero-word overlap query on deadline postponement",
+    "expected_participant": "Aman Sharma",
+    "target_text": "Faculty pushed submission date till Monday 5 PM.",
+    "target_timestamp": "2026-04-20T18:06:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_08",
+    "category": "zero_overlap",
+    "query": "Which vehicle arrangement did we confirm for commuting to the train terminal?",
+    "expected_message_id": "msg_3674",
+    "description": "Zero-word overlap query on morning taxi cab booking",
+    "expected_participant": "Rahul Verma",
+    "target_text": "Reserved two Innova cabs leaving campus 4am.",
+    "target_timestamp": "2026-07-10T18:08:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_09",
+    "category": "zero_overlap",
+    "query": "Which restaurant was selected to celebrate Rahul's placement offer?",
+    "expected_message_id": "msg_4537",
+    "description": "Zero-word overlap query on placement treat dinner venue",
+    "expected_participant": "Rohan Mehta",
+    "target_text": "Treat arranged inside Barbeque Nation Saturday evening.",
+    "target_timestamp": "2026-08-14T19:03:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_10",
+    "category": "zero_overlap",
+    "query": "What sports facility did the group reserve for the weekend tournament?",
+    "expected_message_id": "msg_1774",
+    "description": "Zero-word overlap query on cricket box arena booking",
+    "expected_participant": "Vikram Singh",
+    "target_text": "Apex box cricket arena slot confirmed Sunday dawn.",
+    "target_timestamp": "2026-04-25T19:19:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_11",
+    "category": "semantic",
+    "query": "When did we finalize our vacation plans?",
+    "expected_message_id": "msg_3769",
+    "description": "Semantic query matching vacation conclusion",
+    "expected_participant": "Aman Sharma",
+    "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+    "target_timestamp": "2026-07-14T22:40:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_12",
+    "category": "semantic",
+    "query": "Where did we decide to stay during the trip?",
+    "expected_message_id": "msg_3740",
+    "description": "Semantic query on trip cottage accommodation",
+    "expected_participant": "Rahul Verma",
+    "target_text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+    "target_timestamp": "2026-07-13T19:24:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_13",
+    "category": "semantic",
+    "query": "What framework are we using for our machine learning APIs?",
+    "expected_message_id": "msg_1327",
+    "description": "Semantic query on ML endpoint framework",
+    "expected_participant": "Sneha Rao",
+    "target_text": "FastAPI is way faster for async endpoints and ML inference.",
+    "target_timestamp": "2026-04-08T16:06:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "for"
+    ]
+  },
+  {
+    "id": "eval_14",
+    "category": "semantic",
+    "query": "How are we managing expenses for the college festival?",
+    "expected_message_id": "msg_4618",
+    "description": "Semantic query on festival accounting and Splitwise",
+    "expected_participant": "Priya Patel",
+    "target_text": "Created a dedicated Splitwise group for fest receipts, upload all bills there.",
+    "target_timestamp": "2026-08-18T11:48:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "for"
+    ]
+  },
+  {
+    "id": "eval_15",
+    "category": "semantic",
+    "query": "What was the reason the library was closed on Sunday?",
+    "expected_message_id": "msg_2817",
+    "description": "Semantic query on library maintenance closure",
+    "expected_participant": "Divya Nair",
+    "target_text": "Library air conditioning maintenance scheduled for Sunday morning.",
+    "target_timestamp": "2026-06-07T10:46:00",
+    "calculated_overlap": 2,
+    "shared_tokens": [
+      "library",
+      "sunday"
+    ]
+  },
+  {
+    "id": "eval_16",
+    "category": "person",
+    "query": "What did Priya say about the registration fee?",
+    "expected_message_id": "msg_4673",
+    "description": "Person entity search on Priya's fee announcement",
+    "expected_participant": "Priya Patel",
+    "target_text": "Symposium registration fee will be 250 rupees per team including lunch coupons.",
+    "target_timestamp": "2026-08-20T15:26:00",
+    "calculated_overlap": 2,
+    "shared_tokens": [
+      "registration",
+      "fee"
+    ]
+  },
+  {
+    "id": "eval_17",
+    "category": "person",
+    "query": "What did Rahul say about the train tickets?",
+    "expected_message_id": "msg_3609",
+    "description": "Person entity search on Rahul's Vande Bharat check",
+    "expected_participant": "Rahul Verma",
+    "target_text": "Vande Bharat tickets available for July 14 morning, Tatkal not needed.",
+    "target_timestamp": "2026-07-08T16:45:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "tickets"
+    ]
+  },
+  {
+    "id": "eval_18",
+    "category": "person",
+    "query": "What did Sneha say about the UI design?",
+    "expected_message_id": "msg_2311",
+    "description": "Person entity search on Sneha's Figma wireframes",
+    "expected_participant": "Sneha Rao",
+    "target_text": "Figma wireframes for dashboard and landing page are updated in drive.",
+    "target_timestamp": "2026-05-18T11:49:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_19",
+    "category": "person",
+    "query": "What did Rohan say about the placement coding test?",
+    "expected_message_id": "msg_4423",
+    "description": "Person entity search on Rohan's coding assessment questions",
+    "expected_participant": "Rohan Mehta",
+    "target_text": "The coding test had 3 questions: dynamic programming, graphs, and SQL.",
+    "target_timestamp": "2026-08-10T16:52:00",
+    "calculated_overlap": 3,
+    "shared_tokens": [
+      "coding",
+      "test",
+      "the"
+    ]
+  },
+  {
+    "id": "eval_20",
+    "category": "person",
+    "query": "What did Vikram say about the turf booking?",
+    "expected_message_id": "msg_1932",
+    "description": "Person entity search on Vikram's turf slot timings",
+    "expected_participant": "Vikram Singh",
+    "target_text": "Box cricket turf booked at Sector 62 from 7 to 9 PM, bring studs.",
+    "target_timestamp": "2026-05-02T17:09:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "turf"
+    ]
+  },
+  {
+    "id": "eval_21",
+    "category": "time",
+    "query": "What did we discuss in the first week of March?",
+    "expected_message_id": "msg_0393",
+    "description": "Temporal search targeting March 1-7 window",
+    "expected_participant": "Ananya Gupta",
+    "target_text": "March 3rd meeting notes: stage decorations budget approved by faculty advisor.",
+    "target_timestamp": "2026-03-03T12:00:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "march"
+    ]
+  },
+  {
+    "id": "eval_22",
+    "category": "time",
+    "query": "What happened on July 14?",
+    "expected_message_id": "msg_3769",
+    "description": "Exact day temporal search for July 14 decision",
+    "expected_participant": "Aman Sharma",
+    "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+    "target_timestamp": "2026-07-14T22:40:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_23",
+    "category": "time",
+    "query": "What did we plan around mid-April?",
+    "expected_message_id": "msg_1404",
+    "description": "Mid-month temporal search for mid-April review",
+    "expected_participant": "Sneha Rao",
+    "target_text": "April 10 tech review: team agreed on React frontend architecture.",
+    "target_timestamp": "2026-04-11T10:07:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "april"
+    ]
+  },
+  {
+    "id": "eval_24",
+    "category": "time",
+    "query": "What was announced in late August?",
+    "expected_message_id": "msg_4866",
+    "description": "Late-month temporal search for August 28 announcement",
+    "expected_participant": "Tanvi Malhotra",
+    "target_text": "August 28 announcement: sponsorship partner confirmed with 50k grant.",
+    "target_timestamp": "2026-08-28T12:24:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "august"
+    ]
+  },
+  {
+    "id": "eval_25",
+    "category": "time",
+    "query": "What did we decide about dinner yesterday?",
+    "expected_message_id": "msg_5148",
+    "description": "Relative time search for team dinner confirmation",
+    "expected_participant": "Kabir Joshi",
+    "target_text": "Yesterday's plan confirmed, team dinner at Haveli tonight.",
+    "target_timestamp": "2026-09-08T19:07:00",
+    "calculated_overlap": 2,
+    "shared_tokens": [
+      "dinner",
+      "yesterday"
+    ]
+  },
+  {
+    "id": "eval_26",
+    "category": "person_topic",
+    "query": "What did Priya say about the budget?",
+    "expected_message_id": "msg_3522",
+    "description": "Joint person + topic search on Priya and trip budget",
+    "expected_participant": "Priya Patel",
+    "target_text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
+    "target_timestamp": "2026-07-05T21:44:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "budget"
+    ]
+  },
+  {
+    "id": "eval_27",
+    "category": "person_topic",
+    "query": "What did Aman say about the project repository?",
+    "expected_message_id": "msg_4048",
+    "description": "Joint person + topic search on Aman and GitHub repo setup",
+    "expected_participant": "Aman Sharma",
+    "target_text": "Created the GitHub organization and added main branch protection rules.",
+    "target_timestamp": "2026-07-26T11:05:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "the"
+    ]
+  },
+  {
+    "id": "eval_28",
+    "category": "person_topic",
+    "query": "What did Rohan say about the internship stipend?",
+    "expected_message_id": "msg_2587",
+    "description": "Joint person + topic search on Rohan and 45k stipend offer",
+    "expected_participant": "Rohan Mehta",
+    "target_text": "Bangalore startup offered 45k monthly stipend for 2 months internship.",
+    "target_timestamp": "2026-05-28T14:14:00",
+    "calculated_overlap": 2,
+    "shared_tokens": [
+      "stipend",
+      "internship"
+    ]
+  },
+  {
+    "id": "eval_29",
+    "category": "person_topic",
+    "query": "What did Divya say about the operating systems exam?",
+    "expected_message_id": "msg_0900",
+    "description": "Joint person + topic search on Divya and OS exam topics",
+    "expected_participant": "Divya Nair",
+    "target_text": "Prof said focus on process synchronization and paging algorithms for OS mid-term.",
+    "target_timestamp": "2026-03-22T20:33:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_30",
+    "category": "person_topic",
+    "query": "What did Kabir say about the fest music system?",
+    "expected_message_id": "msg_4798",
+    "description": "Joint person + topic search on Kabir and JBL sound equipment",
+    "expected_participant": "Kabir Joshi",
+    "target_text": "DJ setup and 4 JBL line array speakers reserved for cultural night.",
+    "target_timestamp": "2026-08-25T17:43:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_31",
+    "category": "time_topic",
+    "query": "What did we discuss about exams in April?",
+    "expected_message_id": "msg_1502",
+    "description": "Time + topic search on April exam schedule",
+    "expected_participant": "Sneha Rao",
+    "target_text": "April 15 exam schedule published: DBMS exam on April 22, Networks on April 25.",
+    "target_timestamp": "2026-04-15T12:23:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "april"
+    ]
+  },
+  {
+    "id": "eval_32",
+    "category": "time_topic",
+    "query": "What did we discuss about the trip in July?",
+    "expected_message_id": "msg_3713",
+    "description": "Time + topic search on July trip itinerary",
+    "expected_participant": "Priya Patel",
+    "target_text": "July 12 itinerary draft: Day 1 Solang valley, Day 2 Kasol trek, Day 3 local market.",
+    "target_timestamp": "2026-07-12T14:07:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "july"
+    ]
+  },
+  {
+    "id": "eval_33",
+    "category": "time_topic",
+    "query": "What did we discuss about placements in August?",
+    "expected_message_id": "msg_4305",
+    "description": "Time + topic search on August placement drive visits",
+    "expected_participant": "Rohan Mehta",
+    "target_text": "August 5 placement briefing: Oracle and Cisco campus drives scheduled next week.",
+    "target_timestamp": "2026-08-05T10:05:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "august"
+    ]
+  },
+  {
+    "id": "eval_34",
+    "category": "time_topic",
+    "query": "What did we discuss about project submission in May?",
+    "expected_message_id": "msg_2309",
+    "description": "Time + topic search on May minor project evaluation",
+    "expected_participant": "Aman Sharma",
+    "target_text": "May 18 minor project demo: report spiral binding and IEEE format mandatory.",
+    "target_timestamp": "2026-05-18T11:23:00",
+    "calculated_overlap": 2,
+    "shared_tokens": [
+      "project",
+      "may"
+    ]
+  },
+  {
+    "id": "eval_35",
+    "category": "decision",
+    "query": "What did we finally decide about the venue?",
+    "expected_message_id": "msg_4720",
+    "description": "Decision-intent query for auditorium venue resolution",
+    "expected_participant": "Ananya Gupta",
+    "target_text": "Auditorium slot approved, booking receipt signed.",
+    "target_timestamp": "2026-08-22T14:39:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_36",
+    "category": "decision",
+    "query": "What was the final decision on the trip destination?",
+    "expected_message_id": "msg_3769",
+    "description": "Decision-intent query for Manali trip resolution",
+    "expected_participant": "Aman Sharma",
+    "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+    "target_timestamp": "2026-07-14T22:40:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "final"
+    ]
+  },
+  {
+    "id": "eval_37",
+    "category": "decision",
+    "query": "What tech stack did we agree to use?",
+    "expected_message_id": "msg_1390",
+    "description": "Decision-intent query for FastAPI React stack resolution",
+    "expected_participant": "Sneha Rao",
+    "target_text": "FastAPI with React confirmed as our build choice.",
+    "target_timestamp": "2026-04-10T20:28:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_38",
+    "category": "decision",
+    "query": "What was the final decision regarding event dates?",
+    "expected_message_id": "msg_4725",
+    "description": "Decision-intent query for September 18 symposium date",
+    "expected_participant": "Priya Patel",
+    "target_text": "September 18 finalized for annual symposium, circular released.",
+    "target_timestamp": "2026-08-22T17:04:00",
+    "calculated_overlap": 0,
+    "shared_tokens": []
+  },
+  {
+    "id": "eval_39",
+    "category": "hinglish",
+    "query": "trip ka final decision kab hua?",
+    "expected_message_id": "msg_3769",
+    "description": "Code-mixed Hinglish query for trip decision",
+    "expected_participant": "Aman Sharma",
+    "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+    "target_timestamp": "2026-07-14T22:40:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "final"
+    ]
+  },
+  {
+    "id": "eval_40",
+    "category": "typo_informal",
+    "query": "manali kab fnl hua tha?",
+    "expected_message_id": "msg_3769",
+    "description": "Informal typo query for Manali confirmation",
+    "expected_participant": "Aman Sharma",
+    "target_text": "Done bhai, Manali final. I'll book tomorrow.",
+    "target_timestamp": "2026-07-14T22:40:00",
+    "calculated_overlap": 1,
+    "shared_tokens": [
+      "manali"
+    ]
+  }
+]
