@@ -3,8 +3,8 @@ title: RecallX Semantic Engine
 emoji: 🧠
 colorFrom: indigo
 colorTo: blue
-sdk: docker
-app_port: 7860
+sdk: gradio
+app_file: server.py
 pinned: false
 ---
 
