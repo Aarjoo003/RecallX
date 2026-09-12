@@ -7,7 +7,7 @@ import {
   ContextMessage,
 } from './types';
 
-const API_BASE = import.meta.env.VITE_API_BASE || '/api';
+const API_BASE = (import.meta.env.VITE_API_BASE || '/api').replace(/\/+$/, '');
 
 export async function searchMessages(request: SearchRequest): Promise<SearchResponse> {
   const res = await fetch(`${API_BASE}/search`, {

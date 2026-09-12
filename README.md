@@ -236,4 +236,53 @@ typo_informal      1         100.0%       100.0%
 ---
 
 ## 🛡️ Zero Deployment & Local Privacy Notice
-RecallX was engineered from the ground up to be **100% locally self-hosted**. No data or messages leave the local machine. There are **zero external cloud dependencies, zero remote database connections, and zero cloud deployments**.
+RecallX was engineered from the ground up to be **100% locally self-hosted**. No data or messages leave the local machine during retrieval. There are zero external LLM API costs and zero private data leaks.
+
+---
+
+## 🚀 Live Demo Deployment Guide (Vercel + Cloudflare Tunnel)
+
+For live evaluation and selection-round demonstrations, RecallX uses a hybrid edge deployment:
+
+```mermaid
+flowchart LR
+    A["Vercel Frontend\n(React + Vite SPA)"] -- "HTTPS API Requests\n(VITE_API_BASE)" --> B["Cloudflare Tunnel\n(Public HTTPS URL)"]
+    B --> C["Local FastAPI Backend\n(Port 8000, 0.0.0.0)"]
+    C --> D["Local Dense & FTS5 Index\n(5,207 Messages)"]
+```
+
+### 1. Step 1: Start the Local Backend
+In PowerShell from the project root:
+```powershell
+uvicorn backend.main:app --host 0.0.0.0 --port 8000
+```
+Verify the server is healthy:
+- Root health: `http://localhost:8000/health`
+- API health: `http://localhost:8000/api/health`
+
+### 2. Step 2: Expose Backend via Cloudflare Tunnel
+In a second terminal, start a free, instant Cloudflare Tunnel:
+```powershell
+cloudflared tunnel --url http://localhost:8000
+```
+*(If you do not have cloudflared installed: `winget install --id Cloudflare.cloudflared`)*
+
+Cloudflare will display a public URL such as:
+`https://random-words.trycloudflare.com`
+
+### 3. Step 3: Deploy Frontend to Vercel
+1. Go to [vercel.com](https://vercel.com/) and click **Add New...** → **Project**.
+2. Import your GitHub repository (`https://github.com/Aarjoo003/RecallX.git`).
+3. Set **Root Directory** to `frontend`.
+4. Under **Environment Variables**, add:
+   - **Key:** `VITE_API_BASE`
+   - **Value:** `https://<YOUR_TUNNEL_URL>.trycloudflare.com/api`
+5. Click **Deploy**.
+
+### 4. Step 4: Configure CORS (Optional)
+If restricting access to your Vercel domain:
+```powershell
+$env:CORS_ORIGINS="https://your-project.vercel.app"
+uvicorn backend.main:app --host 0.0.0.0 --port 8000
+```
+By default, `CORS_ORIGINS="*"` is enabled, allowing instant access from any Vercel preview or production domain.
