@@ -1,12 +1,3 @@
----
-title: RecallX Semantic Engine
-emoji: 🧠
-colorFrom: indigo
-colorTo: blue
-sdk: gradio
-app_file: space_app.py
-pinned: false
----
 
 # RecallX (Search a Group Chat Properly)
 
@@ -240,9 +231,9 @@ RecallX was engineered from the ground up to be **100% locally self-hosted**. No
 
 ---
 
-## 🚀 Live Demo Deployment Guide (Vercel + Cloudflare Tunnel)
+## 🚀 Live Demo Deployment Guide (Vercel + Cloudflare Tunnel)-  "https://recall-x-omega.vercel.app/"
 
-For live evaluation and selection-round demonstrations, RecallX uses a hybrid edge deployment:
+For live evaluation demonstrations, RecallX uses a hybrid edge deployment:
 
 ```mermaid
 flowchart LR
