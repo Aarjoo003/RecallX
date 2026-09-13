@@ -130,6 +130,26 @@ The corpus consists of **5,200 messages** distributed realistically across 10 st
 
 ---
 
+## 🛠️ Technologies Used
+
+| Domain / Layer | Technology | Purpose & Capabilities |
+| :--- | :--- | :--- |
+| **Dense Semantic Vector Engine** | **Sentence-Transformers (`all-MiniLM-L6-v2`)** | 384-dimensional dense embeddings mapping semantics across vocabulary differences |
+| **Deep Learning Inference** | **PyTorch** | Local CPU neural network tensor operations (zero external API calls or latency) |
+| **Lexical Search (BM25)** | **SQLite FTS5 + Rank-BM25** | Inverted index BM25 lexical ranking with Porter stemming and token matching |
+| **Vector Mathematics & ML** | **NumPy + Scikit-Learn** | Cosine similarity scoring, matrix manipulations, and L2 normalization |
+| **Backend API Framework** | **FastAPI** | High-performance asynchronous REST API handling search in < 20ms |
+| **ASGI Web Server** | **Uvicorn** | Lightweight, high-throughput asynchronous Python server |
+| **Data Validation & Schemas** | **Pydantic v2** | Strict request/response validation, data models, and automated OpenAPI schemas |
+| **Frontend Framework** | **React 19 + TypeScript** | Strongly-typed, reactive single-page application |
+| **Build Tool & Dev Server** | **Vite** | Lightning-fast development server with HMR and optimized production bundling |
+| **Styling & Design System** | **Tailwind CSS v4** | Modern utility-first CSS with custom glassmorphism, responsive chat timelines, and dark theme |
+| **UI Components & Animation** | **Lucide React + Framer Motion** | Fluent vector iconography and smooth layout animations |
+| **Automated Testing & QA** | **Pytest + HTTPX** | Comprehensive suite of 30 automated unit, integration, and retrieval diversity tests |
+| **Interactive Demo & Container** | **Gradio + Docker** | Turnkey containerization and Hugging Face Spaces web app |
+
+---
+
 ## 🚀 Local Quickstart Guide
 
 RecallX runs **100% locally** on Windows/Linux/macOS without external database setups or cloud services.
@@ -137,25 +157,33 @@ RecallX runs **100% locally** on Windows/Linux/macOS without external database s
 ### 1. Prerequisites
 * Python 3.10+
 * Node.js v18+ & npm
+* Git
 
 ### 2. Backend Setup
 ```powershell
 # Navigate to backend directory
-cd C:\Users\user\recallx\backend
+cd backend
+
+# (Optional but recommended) Create and activate a virtual environment
+python -m venv venv
+# On Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+# On Linux/macOS:
+# source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Start FastAPI server on port 8001
-python -m uvicorn main:app --host 127.0.0.1 --port 8001 --reload
+# Start FastAPI server on port 8000
+python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
 ```
-* Backend will be live at `http://127.0.0.1:8001`
-* Interactive OpenAPI Docs: `http://127.0.0.1:8001/docs`
+* Backend will be live at `http://127.0.0.1:8000`
+* Interactive OpenAPI Docs: `http://127.0.0.1:8000/docs`
 
 ### 3. Frontend Setup
 ```powershell
-# Open a new terminal and navigate to frontend
-cd C:\Users\user\recallx\frontend
+# Open a new terminal and navigate to frontend directory
+cd frontend
 
 # Install node dependencies
 npm install
@@ -164,7 +192,7 @@ npm install
 npm run dev
 ```
 * Frontend will be live at `http://127.0.0.1:5173`
-* Vite automatically proxies `/api` calls to `http://127.0.0.1:8001/api`.
+* Vite automatically proxies `/api` calls to `http://127.0.0.1:8000/api`.
 
 ### 4. Running the Automated Evaluation Suite
 ```powershell
@@ -178,7 +206,7 @@ Executes all 40 queries, calculates real mathematical word overlap, logs top-1 a
 # From the recallx root folder
 python -m pytest -v tests/
 ```
-Runs 23 automated unit and integration tests across query analysis, temporal parsing, hybrid candidate retrieval, zero-overlap precision, context reconstruction, and REST API endpoints.
+Runs 30 automated unit and integration tests across query analysis, temporal parsing, hybrid candidate retrieval, zero-overlap precision, context reconstruction, diversity reranking, and REST API endpoints.
 
 ---
 
