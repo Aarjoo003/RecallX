@@ -29,6 +29,10 @@ build/
 htmlcov/
 .cache/
 
+# Generated Index Artifacts (built automatically on startup in 10s)
+data/index/*.npy
+data/index/*.db
+
 # OS
 .DS_Store
 Thumbs.db
