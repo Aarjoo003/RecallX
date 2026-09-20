@@ -121,7 +121,10 @@ class IndexManager:
             self.messages_cache[m["id"]] = m
 
         print(f"[IndexManager] Encoding {len(texts_to_embed)} messages with conversation context...")
-        self.embeddings = self.embedder.encode(texts_to_embed, batch_size=128, show_progress_bar=True)
+        import gc
+        gc.collect()
+        self.embeddings = self.embedder.encode(texts_to_embed, batch_size=16, show_progress_bar=False)
+        gc.collect()
 
         np.save(str(EMBEDDINGS_FILE), self.embeddings)
         with open(METADATA_FILE, "w", encoding="utf-8") as f:

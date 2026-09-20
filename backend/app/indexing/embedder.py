@@ -1,8 +1,16 @@
 import os
 import numpy as np
+import torch
 from typing import List, Union
 from sentence_transformers import SentenceTransformer
 from ..config import MODEL_NAME
+
+# Minimize PyTorch memory footprint and thread allocations for cloud containers
+torch.set_grad_enabled(False)
+try:
+    torch.set_num_threads(2)
+except Exception:
+    pass
 
 class Embedder:
     _instance = None
