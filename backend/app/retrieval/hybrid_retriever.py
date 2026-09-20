@@ -48,12 +48,15 @@ class HybridRetriever:
                 break
 
         # Multi-representation semantic search with expanded representations
+        exp_embs: List[np.ndarray] = []
         if expanded_queries:
             queries_to_encode = [q.strip() for q in expanded_queries[:2] if q.strip()]
             if queries_to_encode:
-                exp_embs = self.index_manager.embedder.encode(queries_to_encode)
-                if len(exp_embs.shape) == 1:
-                    exp_embs = [exp_embs]
+                encoded = self.index_manager.embedder.encode(queries_to_encode)
+                if len(encoded.shape) == 1:
+                    exp_embs = [encoded]
+                else:
+                    exp_embs = [encoded[i] for i in range(len(encoded))]
                 for exp_emb in exp_embs:
                     exp_results = self.index_manager.search_semantic(exp_emb, top_k=top_k // 2)
                     for mid, s in exp_results:
@@ -81,6 +84,7 @@ class HybridRetriever:
                         best_lex[mid] = float(s)
 
         candidate_dict: Dict[str, Dict[str, Any]] = {}
+        q_vec = query_emb.squeeze()
 
         # Merge semantic candidates
         for msg_id, sem_score in best_sem.items():
@@ -104,11 +108,10 @@ class HybridRetriever:
                     idx = self.index_manager.id_to_idx.get(msg_id)
                     sem_val = 0.0
                     if idx is not None and self.index_manager.embeddings is not None:
-                        sem_val = float(np.dot(self.index_manager.embeddings[idx], query_emb.squeeze()))
-                        if expanded_queries:
-                            for exp_q in expanded_queries:
-                                exp_e = self.index_manager.embedder.encode(exp_q)
-                                sem_val = max(sem_val, float(np.dot(self.index_manager.embeddings[idx], exp_e.squeeze())))
+                        msg_vec = self.index_manager.embeddings[idx]
+                        sem_val = float(np.dot(msg_vec, q_vec))
+                        for exp_e in exp_embs:
+                            sem_val = max(sem_val, float(np.dot(msg_vec, exp_e.squeeze())))
 
                     candidate_dict[msg_id] = {
                         "message": msg,
@@ -127,11 +130,10 @@ class HybridRetriever:
                         idx = self.index_manager.id_to_idx.get(mid)
                         sem_val = 0.0
                         if idx is not None and self.index_manager.embeddings is not None:
-                            sem_val = float(np.dot(self.index_manager.embeddings[idx], query_emb.squeeze()))
-                            if expanded_queries:
-                                for exp_q in expanded_queries:
-                                    exp_e = self.index_manager.embedder.encode(exp_q)
-                                    sem_val = max(sem_val, float(np.dot(self.index_manager.embeddings[idx], exp_e.squeeze())))
+                            msg_vec = self.index_manager.embeddings[idx]
+                            sem_val = float(np.dot(msg_vec, q_vec))
+                            for exp_e in exp_embs:
+                                sem_val = max(sem_val, float(np.dot(msg_vec, exp_e.squeeze())))
                         candidate_dict[mid] = {
                             "message": m,
                             "semantic_score": max(0.0, sem_val),
