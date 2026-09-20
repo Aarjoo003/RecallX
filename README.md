@@ -1,14 +1,3 @@
----
-title: RecallX Semantic Engine
-emoji: 🧠
-colorFrom: indigo
-colorTo: blue
-sdk: gradio
-sdk_version: 6.28.0
-python_version: '3.10'
-app_file: space_app.py
-pinned: false
----
 
 # RecallX (Search a Group Chat Properly)
 
