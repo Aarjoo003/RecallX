@@ -345,66 +345,6 @@ The corpus consists of **5,200 messages** distributed realistically across 10 st
 
 ---
 
-## 🚀 Local Quickstart Guide
-
-RecallX runs **100% locally** on Windows/Linux/macOS without external database setups or cloud services.
-
-### 1. Prerequisites
-* Python 3.10+
-* Node.js v18+ & npm
-* Git
-
-### 2. Backend Setup
-```powershell
-# Navigate to backend directory
-cd backend
-
-# (Optional but recommended) Create and activate a virtual environment
-python -m venv venv
-# On Windows PowerShell:
-.\venv\Scripts\Activate.ps1
-# On Linux/macOS:
-# source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Start FastAPI server on port 8000
-python -m uvicorn main:app --host 127.0.0.1 --port 8000 --reload
-```
-* Backend will be live at `http://127.0.0.1:8000`
-* Interactive OpenAPI Docs: `http://127.0.0.1:8000/docs`
-
-### 3. Frontend Setup
-```powershell
-# Open a new terminal and navigate to frontend directory
-cd frontend
-
-# Install node dependencies
-npm install
-
-# Start Vite React development server
-npm run dev
-```
-* Frontend will be live at `http://127.0.0.1:5173`
-* Vite automatically proxies `/api` calls to `http://127.0.0.1:8000`.
-
-### 4. Running the Automated Evaluation Suite
-```powershell
-# From the recallx root folder
-python evaluate.py
-```
-Executes all 40 queries, calculates real mathematical word overlap, logs top-1 and top-3 accuracy, and exports `data/evaluation/eval_results.json`.
-
-### 5. Running Automated Unit & Integration Tests
-```powershell
-# From the recallx root folder
-python -m pytest -v tests/
-```
-Runs 30 automated unit and integration tests across query analysis, temporal parsing, hybrid candidate retrieval, zero-overlap precision, context reconstruction, diversity reranking, and REST API endpoints.
-
----
-
 ## 📊 Comprehensive Evaluation Report
 
 ```
@@ -469,14 +409,9 @@ flowchart LR
     B --> D["SQLite FTS5 BM25 Inverted Index\n(5,207 Messages)"]
 ```
 
-### 1. Cloud Production Deployment (Render + Vercel)
+### Cloud Production Deployment (Render + Vercel)
 RecallX runs in full production with zero external database dependencies:
 1. **Backend Engine**: Hosted on Render (`backend/main.py`), serving sub-20ms hybrid search over 5,207 pre-indexed messages.
 2. **Frontend UI**: Hosted on Vercel (`frontend/`), automatically routing requests through the live Render API.
 3. **Edge Proxying**: `frontend/vercel.json` provides built-in edge rewrites for `/api/*`, ensuring zero CORS headaches and seamless resilience.
 
-### 2. Alternative Hybrid Local Demo (Vercel + Cloudflare Tunnel)
-If you wish to demonstrate real-time local search on your own machine:
-1. **Start Backend**: `uvicorn backend.main:app --host 0.0.0.0 --port 8000`
-2. **Start Cloudflare Tunnel**: `cloudflared tunnel --url http://localhost:8000`
-3. **Connect Frontend**: Point `VITE_API_BASE` to `https://<YOUR_TUNNEL_URL>.trycloudflare.com/api`
