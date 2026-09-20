@@ -1,3 +1,14 @@
+---
+title: RecallX Semantic Engine
+emoji: 🧠
+colorFrom: indigo
+colorTo: blue
+sdk: gradio
+sdk_version: 6.28.0
+python_version: '3.10'
+app_file: space_app.py
+pinned: false
+---
 
 # RecallX (Search a Group Chat Properly)
 
@@ -259,49 +270,34 @@ RecallX was engineered from the ground up to be **100% locally self-hosted**. No
 
 ---
 
-## 🚀 Live Demo Deployment Guide (Vercel + Cloudflare Tunnel)-  "https://recall-x-omega.vercel.app/"
+## 🌐 Production Live Deployments
 
-For live evaluation demonstrations, RecallX uses a hybrid edge deployment:
+| Component | Platform | URL | Status |
+| :--- | :--- | :--- | :--- |
+| **Frontend Web App** | **Vercel** | [https://recall-x-omega.vercel.app/](https://recall-x-omega.vercel.app/) | 🟢 **Production Live** |
+| **Backend Retrieval Engine** | **Hugging Face Spaces** | [https://huggingface.co/spaces/aarzoodahiya81/recallx-backend](https://huggingface.co/spaces/aarzoodahiya81/recallx-backend) | 🟢 **Production Live** |
+| **Direct REST API** | **HF Space Direct** | `https://aarzoodahiya81-recallx-backend.hf.space/api` | 🟢 **Active (< 20ms)** |
+| **Interactive API Docs** | **Swagger UI** | `https://aarzoodahiya81-recallx-backend.hf.space/docs` | 🟢 **Active** |
+
+---
+
+## 🚀 Live Demo Architecture
 
 ```mermaid
 flowchart LR
-    A["Vercel Frontend\n(React + Vite SPA)"] -- "HTTPS API Requests\n(VITE_API_BASE)" --> B["Cloudflare Tunnel\n(Public HTTPS URL)"]
-    B --> C["Local FastAPI Backend\n(Port 8000, 0.0.0.0)"]
-    C --> D["Local Dense & FTS5 Index\n(5,207 Messages)"]
+    A["Vercel Frontend\n(React 19 + TypeScript SPA)"] -- "HTTPS REST API\n(/api/search, /api/health)" --> B["Hugging Face Space\n(FastAPI + Gradio Engine)"]
+    B --> C["Local Dense Vector Store\n(384d all-MiniLM-L6-v2)"]
+    B --> D["SQLite FTS5 BM25 Inverted Index\n(5,207 Messages)"]
 ```
 
-### 1. Step 1: Start the Local Backend
-In PowerShell from the project root:
-```powershell
-uvicorn backend.main:app --host 0.0.0.0 --port 8000
-```
-Verify the server is healthy:
-- Root health: `http://localhost:8000/health`
-- API health: `http://localhost:8000/api/health`
+### 1. Cloud Deployment (Hugging Face Spaces + Vercel)
+RecallX runs in full production with zero external database dependencies:
+1. **Backend Engine**: Hosted on Hugging Face Spaces using the Gradio/FastAPI runtime (`app.py`), serving sub-20ms hybrid search over 5,207 pre-indexed messages.
+2. **Frontend UI**: Hosted on Vercel (`frontend/`), automatically routing requests through the Hugging Face Spaces API.
+3. **Edge Proxying**: `frontend/vercel.json` provides built-in edge rewrites for `/api/*`, ensuring zero CORS headaches and seamless resilience.
 
-### 2. Step 2: Expose Backend via Cloudflare Tunnel
-In a second terminal, start a free, instant Cloudflare Tunnel:
-```powershell
-cloudflared tunnel --url http://localhost:8000
-```
-*(If you do not have cloudflared installed: `winget install --id Cloudflare.cloudflared`)*
-
-Cloudflare will display a public URL such as:
-`https://random-words.trycloudflare.com`
-
-### 3. Step 3: Deploy Frontend to Vercel
-1. Go to [vercel.com](https://vercel.com/) and click **Add New...** → **Project**.
-2. Import your GitHub repository (`https://github.com/Aarjoo003/RecallX.git`).
-3. Set **Root Directory** to `frontend`.
-4. Under **Environment Variables**, add:
-   - **Key:** `VITE_API_BASE`
-   - **Value:** `https://<YOUR_TUNNEL_URL>.trycloudflare.com/api`
-5. Click **Deploy**.
-
-### 4. Step 4: Configure CORS (Optional)
-If restricting access to your Vercel domain:
-```powershell
-$env:CORS_ORIGINS="https://your-project.vercel.app"
-uvicorn backend.main:app --host 0.0.0.0 --port 8000
-```
-By default, `CORS_ORIGINS="*"` is enabled, allowing instant access from any Vercel preview or production domain.
+### 2. Alternative Hybrid Local Demo (Vercel + Cloudflare Tunnel)
+If you wish to demonstrate real-time local search on your own machine:
+1. **Start Backend**: `uvicorn backend.main:app --host 0.0.0.0 --port 8000`
+2. **Start Cloudflare Tunnel**: `cloudflared tunnel --url http://localhost:8000`
+3. **Connect Frontend**: Point `VITE_API_BASE` to `https://<YOUR_TUNNEL_URL>.trycloudflare.com/api`

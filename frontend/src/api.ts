@@ -7,7 +7,11 @@ import {
   ContextMessage,
 } from './types';
 
-const API_BASE = (import.meta.env.VITE_API_BASE || '/api').replace(/\/+$/, '');
+const DEFAULT_API_BASE = import.meta.env.DEV
+  ? '/api'
+  : 'https://aarzoodahiya81-recallx-backend.hf.space/api';
+
+const API_BASE = (import.meta.env.VITE_API_BASE || DEFAULT_API_BASE).replace(/\/+$/, '');
 
 export async function searchMessages(request: SearchRequest): Promise<SearchResponse> {
   const res = await fetch(`${API_BASE}/search`, {

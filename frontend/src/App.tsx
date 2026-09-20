@@ -127,6 +127,36 @@ export const App: React.FC = () => {
     initData();
   }, []);
 
+  // Auto-reconnect polling while engine is offline (e.g. cold start on Hugging Face Spaces)
+  useEffect(() => {
+    if (engineOnline) return;
+
+    const timer = setInterval(async () => {
+      try {
+        const health = await getHealthCheck();
+        if (health && (health.index_ready || health.status === 'healthy')) {
+          setEngineOnline(true);
+          if (health.indexed_messages) {
+            setIndexedCount(health.indexed_messages);
+          }
+          const [pList, dList, report] = await Promise.allSettled([
+            getParticipants(),
+            getDecisions(),
+            getEvaluationReport(),
+          ]);
+          if (pList.status === 'fulfilled') setParticipants(pList.value);
+          if (dList.status === 'fulfilled') setDecisions(dList.value);
+          if (report.status === 'fulfilled') setEvaluationReport(report.value);
+          executeSearch(query, activeFilters);
+        }
+      } catch {
+        // Backend still spinning up
+      }
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, [engineOnline, query, activeFilters]);
+
   // Global keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
