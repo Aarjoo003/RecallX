@@ -47,6 +47,8 @@ class IndexManager:
         self.idx_to_id: List[str] = []
         self.messages_cache: Dict[str, Dict[str, Any]] = {}
         self.is_ready = False
+        self.init_stage = "pending"
+        self.init_error: Optional[str] = None
 
     @classmethod
     def get_instance(cls):
@@ -55,20 +57,30 @@ class IndexManager:
         return cls._instance
 
     def initialize(self, force_rebuild: bool = False):
-        INDEX_DIR.mkdir(parents=True, exist_ok=True)
-        embeddings_exist = EMBEDDINGS_FILE.exists()
-        meta_exist = METADATA_FILE.exists()
-        db_exist = SQLITE_DB.exists()
+        try:
+            INDEX_DIR.mkdir(parents=True, exist_ok=True)
+            embeddings_exist = EMBEDDINGS_FILE.exists()
+            meta_exist = METADATA_FILE.exists()
+            db_exist = SQLITE_DB.exists()
 
-        if not force_rebuild and embeddings_exist and meta_exist and db_exist:
-            print("[IndexManager] Loading existing pre-built indexes...")
-            self._load_from_disk()
-        else:
-            print("[IndexManager] Building fresh index from messages.jsonl...")
-            self.build_index()
+            if not force_rebuild and embeddings_exist and meta_exist and db_exist:
+                self.init_stage = "loading_prebuilt_index"
+                print("[IndexManager] Loading existing pre-built indexes...")
+                self._load_from_disk()
+            else:
+                self.init_stage = "building_fresh_index"
+                print("[IndexManager] Building fresh index from messages.jsonl...")
+                self.build_index()
 
-        self.is_ready = True
-        print(f"[IndexManager] Ready! Indexed {len(self.idx_to_id)} messages in memory.")
+            self.is_ready = True
+            self.init_stage = "ready"
+            print(f"[IndexManager] Ready! Indexed {len(self.idx_to_id)} messages in memory.")
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            self.init_error = f"{type(e).__name__}: {str(e)}"
+            self.init_stage = "failed"
+            print(f"[IndexManager] Initialization failed: {self.init_error}")
 
     def _load_from_disk(self):
         self.embeddings = np.load(str(EMBEDDINGS_FILE))

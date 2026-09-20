@@ -23,6 +23,8 @@ def health_check():
         "service": "RecallX Semantic Retrieval Engine",
         "index_ready": mgr.is_ready,
         "indexed_messages": len(mgr.idx_to_id) if mgr.is_ready else 0,
+        "init_stage": getattr(mgr, "init_stage", "unknown"),
+        "init_error": getattr(mgr, "init_error", None),
         "version": "1.0.0"
     }
 
