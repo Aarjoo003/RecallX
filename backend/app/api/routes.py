@@ -19,7 +19,7 @@ router = APIRouter(prefix="/api")
 def health_check():
     mgr = IndexManager.get_instance()
     return {
-        "status": "healthy",
+        "status": "healthy" if mgr.is_ready else "initializing",
         "service": "RecallX Semantic Retrieval Engine",
         "index_ready": mgr.is_ready,
         "indexed_messages": len(mgr.idx_to_id) if mgr.is_ready else 0,
@@ -28,6 +28,12 @@ def health_check():
 
 @router.post("/search", response_model=SearchResponse)
 def search_messages(request: SearchRequest):
+    mgr = IndexManager.get_instance()
+    if not mgr.is_ready:
+        raise HTTPException(
+            status_code=503,
+            detail="RecallX semantic index is warming up in the background. Please wait a moment and try again."
+        )
     if not request.query or not request.query.strip():
         return SearchResponse(
             query="",
@@ -44,6 +50,11 @@ def search_messages(request: SearchRequest):
 @router.get("/messages/{message_id}")
 def get_message_detail(message_id: str):
     mgr = IndexManager.get_instance()
+    if not mgr.is_ready:
+        raise HTTPException(
+            status_code=503,
+            detail="RecallX semantic index is warming up in the background. Please wait a moment and try again."
+        )
     msg = mgr.get_message(message_id)
     if not msg:
         raise HTTPException(status_code=404, detail=f"Message '{message_id}' not found.")

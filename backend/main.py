@@ -22,16 +22,22 @@ except (ImportError, AttributeError):
     from backend.app.indexing.index_manager import IndexManager
 
 
+import threading
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """
-    Lifecycle manager for pre-loading dense embeddings and SQLite indexes
-    into memory on startup so search queries execute in under 20ms.
+    Lifecycle manager: starts the index initialization in a background daemon thread.
+    This allows Uvicorn to bind to the Render port immediately (<1s),
+    passing Render's port scan health check without timing out.
     """
-    print("[RecallX] Initializing Semantic Index & Embedding Engine...")
     mgr = IndexManager.get_instance()
-    mgr.initialize()
-    print(f"[RecallX] Retrieval Engine ready! ({len(mgr.idx_to_id)} indexed messages)")
+    if not mgr.is_ready:
+        print("[RecallX] Spawning background thread for Semantic Index & Embedding Engine...")
+        init_thread = threading.Thread(target=mgr.initialize, daemon=True)
+        init_thread.start()
+    else:
+        print(f"[RecallX] Index already ready! ({len(mgr.idx_to_id)} indexed messages)")
     yield
     print("[RecallX] Shutting down...")
 
@@ -69,7 +75,7 @@ app.include_router(api_router)
 def health():
     mgr = IndexManager.get_instance()
     return {
-        "status": "healthy",
+        "status": "healthy" if mgr.is_ready else "initializing",
         "service": "RecallX Semantic Retrieval Engine",
         "index_ready": mgr.is_ready,
         "indexed_messages": len(mgr.idx_to_id) if mgr.is_ready else 0,
