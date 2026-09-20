@@ -9,7 +9,7 @@ import {
 
 const DEFAULT_API_BASE = import.meta.env.DEV
   ? '/api'
-  : 'https://aarzoodahiya81-recallx-backend.hf.space/api';
+  : 'https://recall-backend-ea8u.onrender.com/api';
 
 const API_BASE = (import.meta.env.VITE_API_BASE || DEFAULT_API_BASE).replace(/\/+$/, '');
 

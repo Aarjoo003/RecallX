@@ -159,4 +159,9 @@ class IndexManager:
         return results
 
     def get_message(self, message_id: str) -> Optional[Dict[str, Any]]:
-        return self.messages_cache.get(message_id) or self.lexical_index.get_message_by_id(message_id)
+        msg = self.messages_cache.get(message_id)
+        if msg is None:
+            msg = self.lexical_index.get_message_by_id(message_id)
+            if msg:
+                self.messages_cache[message_id] = msg
+        return msg

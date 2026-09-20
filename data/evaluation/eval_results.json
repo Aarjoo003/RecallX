@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-12T16:47:46",
+  "timestamp": "2026-09-21T00:54:39",
   "total_queries": 40,
-  "overall_top1_accuracy": 100.0,
+  "overall_top1_accuracy": 97.5,
   "overall_top3_accuracy": 100.0,
   "zero_overlap_top1_accuracy": 100.0,
   "zero_overlap_top3_accuracy": 100.0,
-  "avg_latency_ms": 1389.78,
+  "avg_latency_ms": 1100.74,
   "category_breakdown": {
     "zero_overlap": {
       "total": 10,
@@ -37,9 +37,9 @@
     },
     "person_topic": {
       "total": 5,
-      "top1_correct": 5,
+      "top1_correct": 4,
       "top3_correct": 5,
-      "top1_accuracy": 100.0,
+      "top1_accuracy": 80.0,
       "top3_accuracy": 100.0
     },
     "time_topic": {
@@ -84,30 +84,30 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 126.9,
+      "latency_ms": 137.93,
       "top_candidates": [
         {
           "message_id": "msg_3769",
           "text": "Done bhai, Manali final. I'll book tomorrow.",
           "participant": "Aman Sharma",
           "final_score": 1.0,
-          "semantic_score": 0.6997,
+          "semantic_score": 0.293,
           "lexical_score": 0.0
         },
         {
           "message_id": "msg_3542",
           "text": "Sabhi log suno, total limit 8k fix kar di.",
           "participant": "Priya Patel",
-          "final_score": 0.6147,
-          "semantic_score": 0.5883,
+          "final_score": 0.4687,
+          "semantic_score": 0.2637,
           "lexical_score": 0.0
         },
         {
-          "message_id": "msg_3740",
-          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
-          "participant": "Rahul Verma",
-          "final_score": 0.5875,
-          "semantic_score": 0.6778,
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.431,
+          "semantic_score": 0.33,
           "lexical_score": 0.0
         }
       ]
@@ -124,7 +124,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 2490.02,
+      "latency_ms": 2636.67,
       "top_candidates": [
         {
           "message_id": "msg_1390",
@@ -164,7 +164,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 2459.84,
+      "latency_ms": 2424.81,
       "top_candidates": [
         {
           "message_id": "msg_4720",
@@ -204,31 +204,31 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 204.03,
+      "latency_ms": 114.25,
       "top_candidates": [
         {
           "message_id": "msg_3542",
           "text": "Sabhi log suno, total limit 8k fix kar di.",
           "participant": "Priya Patel",
           "final_score": 1.0,
-          "semantic_score": 0.5242,
+          "semantic_score": 0.3964,
           "lexical_score": 0.2501
-        },
-        {
-          "message_id": "msg_3769",
-          "text": "Done bhai, Manali final. I'll book tomorrow.",
-          "participant": "Aman Sharma",
-          "final_score": 0.4367,
-          "semantic_score": 0.629,
-          "lexical_score": 0.26
         },
         {
           "message_id": "msg_3522",
           "text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
           "participant": "Priya Patel",
-          "final_score": 0.471,
-          "semantic_score": 0.5444,
+          "final_score": 0.3693,
+          "semantic_score": 0.4088,
           "lexical_score": 0.6509
+        },
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.2908,
+          "semantic_score": 0.4377,
+          "lexical_score": 0.2501
         }
       ]
     },
@@ -244,7 +244,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 1672.48,
+      "latency_ms": 1430.8,
       "top_candidates": [
         {
           "message_id": "msg_4919",
@@ -284,7 +284,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 175.27,
+      "latency_ms": 124.34,
       "top_candidates": [
         {
           "message_id": "msg_0632",
@@ -324,7 +324,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 1360.5,
+      "latency_ms": 1085.64,
       "top_candidates": [
         {
           "message_id": "msg_1650",
@@ -364,31 +364,31 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 208.11,
+      "latency_ms": 134.42,
       "top_candidates": [
         {
           "message_id": "msg_3674",
           "text": "Reserved two Innova cabs leaving campus 4am.",
           "participant": "Rahul Verma",
-          "final_score": 1.0,
-          "semantic_score": 0.5558,
+          "final_score": 0.9802,
+          "semantic_score": 0.2834,
           "lexical_score": 0.2706
+        },
+        {
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.2908,
+          "semantic_score": 0.4377,
+          "lexical_score": 0.2501
         },
         {
           "message_id": "msg_3769",
           "text": "Done bhai, Manali final. I'll book tomorrow.",
           "participant": "Aman Sharma",
-          "final_score": 0.4367,
-          "semantic_score": 0.629,
+          "final_score": 0.2487,
+          "semantic_score": 0.3783,
           "lexical_score": 0.26
-        },
-        {
-          "message_id": "msg_3446",
-          "text": "Manali weather looks pleasant! Old Manali, Rohtang pass, Solang valley.",
-          "participant": "Sneha Rao",
-          "final_score": 0.4362,
-          "semantic_score": 0.6346,
-          "lexical_score": 0.241
         }
       ]
     },
@@ -404,7 +404,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 2139.5,
+      "latency_ms": 1635.33,
       "top_candidates": [
         {
           "message_id": "msg_4537",
@@ -444,7 +444,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 1041.3,
+      "latency_ms": 793.06,
       "top_candidates": [
         {
           "message_id": "msg_1774",
@@ -484,31 +484,31 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 182.35,
+      "latency_ms": 76.32,
       "top_candidates": [
         {
           "message_id": "msg_3769",
           "text": "Done bhai, Manali final. I'll book tomorrow.",
           "participant": "Aman Sharma",
           "final_score": 1.0,
-          "semantic_score": 0.629,
+          "semantic_score": 0.3783,
           "lexical_score": 0.26
         },
         {
           "message_id": "msg_3542",
           "text": "Sabhi log suno, total limit 8k fix kar di.",
           "participant": "Priya Patel",
-          "final_score": 0.6109,
-          "semantic_score": 0.5242,
+          "final_score": 0.5313,
+          "semantic_score": 0.3473,
           "lexical_score": 0.2501
         },
         {
-          "message_id": "msg_3740",
-          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
-          "participant": "Rahul Verma",
-          "final_score": 0.561,
-          "semantic_score": 0.6188,
-          "lexical_score": 0.0
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.5045,
+          "semantic_score": 0.4377,
+          "lexical_score": 0.2501
         }
       ]
     },
@@ -524,31 +524,31 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 236.08,
+      "latency_ms": 108.76,
       "top_candidates": [
         {
           "message_id": "msg_3740",
           "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
           "participant": "Rahul Verma",
-          "final_score": 1.0,
-          "semantic_score": 0.6778,
+          "final_score": 0.9966,
+          "semantic_score": 0.3183,
           "lexical_score": 0.2316
-        },
-        {
-          "message_id": "msg_3769",
-          "text": "Done bhai, Manali final. I'll book tomorrow.",
-          "participant": "Aman Sharma",
-          "final_score": 0.4917,
-          "semantic_score": 0.6997,
-          "lexical_score": 0.268
         },
         {
           "message_id": "msg_3767",
           "text": "14-18 dates are locked from my side too.",
           "participant": "Sneha Rao",
-          "final_score": 0.4699,
-          "semantic_score": 0.674,
+          "final_score": 0.2544,
+          "semantic_score": 0.3866,
           "lexical_score": 0.2578
+        },
+        {
+          "message_id": "msg_3769",
+          "text": "Done bhai, Manali final. I'll book tomorrow.",
+          "participant": "Aman Sharma",
+          "final_score": 0.2122,
+          "semantic_score": 0.327,
+          "lexical_score": 0.268
         }
       ]
     },
@@ -564,7 +564,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 618.18,
+      "latency_ms": 442.15,
       "top_candidates": [
         {
           "message_id": "msg_1327",
@@ -604,7 +604,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 2856.46,
+      "latency_ms": 2265.45,
       "top_candidates": [
         {
           "message_id": "msg_4618",
@@ -644,7 +644,7 @@
       "top3_match": true,
       "word_overlap": 2,
       "is_zero_overlap": false,
-      "latency_ms": 3366.39,
+      "latency_ms": 2803.68,
       "top_candidates": [
         {
           "message_id": "msg_2817",
@@ -684,14 +684,14 @@
       "top3_match": true,
       "word_overlap": 2,
       "is_zero_overlap": false,
-      "latency_ms": 3330.35,
+      "latency_ms": 2549.88,
       "top_candidates": [
         {
           "message_id": "msg_4673",
           "text": "Symposium registration fee will be 250 rupees per team including lunch coupons.",
           "participant": "Priya Patel",
-          "final_score": 0.9249,
-          "semantic_score": 0.6003,
+          "final_score": 0.9124,
+          "semantic_score": 0.5691,
           "lexical_score": 0.565
         },
         {
@@ -724,31 +724,31 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 1421.15,
+      "latency_ms": 1082.66,
       "top_candidates": [
         {
           "message_id": "msg_3609",
           "text": "Vande Bharat tickets available for July 14 morning, Tatkal not needed.",
           "participant": "Rahul Verma",
-          "final_score": 0.8887,
-          "semantic_score": 0.5364,
+          "final_score": 0.7811,
+          "semantic_score": 0.2673,
           "lexical_score": 0.4941
         },
         {
           "message_id": "msg_3443",
           "text": "100% agreed! Either Goa beach or Himachal mountains.",
           "participant": "Rahul Verma",
-          "final_score": 0.8576,
-          "semantic_score": 0.5465,
+          "final_score": 0.7732,
+          "semantic_score": 0.3356,
           "lexical_score": 0.26
         },
         {
-          "message_id": "msg_3740",
-          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
+          "message_id": "msg_3770",
+          "text": "I'll check the hotels then, sleep well guys! 🌲",
           "participant": "Rahul Verma",
-          "final_score": 0.8475,
-          "semantic_score": 0.6188,
-          "lexical_score": 0.0
+          "final_score": 0.7671,
+          "semantic_score": 0.3238,
+          "lexical_score": 0.2501
         }
       ]
     },
@@ -764,7 +764,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 848.34,
+      "latency_ms": 589.51,
       "top_candidates": [
         {
           "message_id": "msg_2311",
@@ -804,7 +804,7 @@
       "top3_match": true,
       "word_overlap": 2,
       "is_zero_overlap": false,
-      "latency_ms": 2700.84,
+      "latency_ms": 2085.22,
       "top_candidates": [
         {
           "message_id": "msg_4423",
@@ -818,8 +818,8 @@
           "message_id": "msg_4305",
           "text": "August 5 placement briefing: Oracle and Cisco campus drives scheduled next week.",
           "participant": "Rohan Mehta",
-          "final_score": 0.8546,
-          "semantic_score": 0.4965,
+          "final_score": 0.849,
+          "semantic_score": 0.4826,
           "lexical_score": 0.3731
         },
         {
@@ -827,7 +827,7 @@
           "text": "Yes, finding shortest path in weighted network with delay penalties.",
           "participant": "Rohan Mehta",
           "final_score": 0.8298,
-          "semantic_score": 0.4839,
+          "semantic_score": 0.4838,
           "lexical_score": 0.2415
         }
       ]
@@ -844,7 +844,7 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 654.46,
+      "latency_ms": 400.82,
       "top_candidates": [
         {
           "message_id": "msg_1932",
@@ -884,7 +884,7 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 624.47,
+      "latency_ms": 381.72,
       "top_candidates": [
         {
           "message_id": "msg_0393",
@@ -924,7 +924,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 119.98,
+      "latency_ms": 52.63,
       "top_candidates": [
         {
           "message_id": "msg_3769",
@@ -964,7 +964,7 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 687.92,
+      "latency_ms": 382.18,
       "top_candidates": [
         {
           "message_id": "msg_1404",
@@ -1004,7 +1004,7 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 1151.66,
+      "latency_ms": 784.83,
       "top_candidates": [
         {
           "message_id": "msg_4866",
@@ -1044,7 +1044,7 @@
       "top3_match": true,
       "word_overlap": 2,
       "is_zero_overlap": false,
-      "latency_ms": 110.93,
+      "latency_ms": 40.32,
       "top_candidates": [
         {
           "message_id": "msg_5148",
@@ -1078,36 +1078,36 @@
       "query": "What did Priya say about the budget?",
       "expected_message_id": "msg_3522",
       "target_text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
-      "predicted_message_id": "msg_3522",
-      "predicted_text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
-      "top1_match": true,
+      "predicted_message_id": "msg_3542",
+      "predicted_text": "Sabhi log suno, total limit 8k fix kar di.",
+      "top1_match": false,
       "top3_match": true,
-      "word_overlap": 1,
-      "is_zero_overlap": false,
-      "latency_ms": 2839.33,
+      "word_overlap": 0,
+      "is_zero_overlap": true,
+      "latency_ms": 2270.92,
       "top_candidates": [
-        {
-          "message_id": "msg_3522",
-          "text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
-          "participant": "Priya Patel",
-          "final_score": 0.8735,
-          "semantic_score": 0.5444,
-          "lexical_score": 0.3713
-        },
         {
           "message_id": "msg_3542",
           "text": "Sabhi log suno, total limit 8k fix kar di.",
           "participant": "Priya Patel",
-          "final_score": 0.8472,
-          "semantic_score": 0.5242,
+          "final_score": 0.7764,
+          "semantic_score": 0.3473,
           "lexical_score": 0.2501
+        },
+        {
+          "message_id": "msg_3522",
+          "text": "Total estimated budget per head for Manali trip comes to 7500 including travel.",
+          "participant": "Priya Patel",
+          "final_score": 0.7633,
+          "semantic_score": 0.269,
+          "lexical_score": 0.3713
         },
         {
           "message_id": "msg_3766",
           "text": "Haan sabhi ne vote de diya group poll me.",
           "participant": "Priya Patel",
-          "final_score": 0.8459,
-          "semantic_score": 0.521,
+          "final_score": 0.7599,
+          "semantic_score": 0.3061,
           "lexical_score": 0.2501
         }
       ]
@@ -1124,7 +1124,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 1187.96,
+      "latency_ms": 888.0,
       "top_candidates": [
         {
           "message_id": "msg_4048",
@@ -1164,7 +1164,7 @@
       "top3_match": true,
       "word_overlap": 2,
       "is_zero_overlap": false,
-      "latency_ms": 1646.3,
+      "latency_ms": 1333.14,
       "top_candidates": [
         {
           "message_id": "msg_2587",
@@ -1183,12 +1183,12 @@
           "lexical_score": 0.2618
         },
         {
-          "message_id": "msg_4305",
-          "text": "August 5 placement briefing: Oracle and Cisco campus drives scheduled next week.",
+          "message_id": "msg_2591",
+          "text": "Backend engineering, working on distributed caching and Kafka.",
           "participant": "Rohan Mehta",
-          "final_score": 0.8546,
-          "semantic_score": 0.4965,
-          "lexical_score": 0.3731
+          "final_score": 0.7979,
+          "semantic_score": 0.4947,
+          "lexical_score": 0.0
         }
       ]
     },
@@ -1204,7 +1204,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 3818.08,
+      "latency_ms": 2963.79,
       "top_candidates": [
         {
           "message_id": "msg_0900",
@@ -1218,8 +1218,8 @@
           "message_id": "msg_1507",
           "text": "Networks syllabus is huge, especially subnetting and TCP sliding window.",
           "participant": "Divya Nair",
-          "final_score": 0.5653,
-          "semantic_score": 0.4189,
+          "final_score": 0.5318,
+          "semantic_score": 0.3351,
           "lexical_score": 0.3182
         },
         {
@@ -1244,7 +1244,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 2135.43,
+      "latency_ms": 1979.32,
       "top_candidates": [
         {
           "message_id": "msg_4798",
@@ -1284,7 +1284,7 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 666.28,
+      "latency_ms": 484.56,
       "top_candidates": [
         {
           "message_id": "msg_1502",
@@ -1306,8 +1306,8 @@
           "message_id": "msg_1507",
           "text": "Networks syllabus is huge, especially subnetting and TCP sliding window.",
           "participant": "Divya Nair",
-          "final_score": 0.9065,
-          "semantic_score": 0.6223,
+          "final_score": 0.9018,
+          "semantic_score": 0.6108,
           "lexical_score": 0.3835
         }
       ]
@@ -1324,31 +1324,31 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 204.12,
+      "latency_ms": 76.12,
       "top_candidates": [
         {
           "message_id": "msg_3713",
           "text": "July 12 itinerary draft: Day 1 Solang valley, Day 2 Kasol trek, Day 3 local market.",
           "participant": "Priya Patel",
           "final_score": 1.0,
-          "semantic_score": 0.543,
+          "semantic_score": 0.3416,
           "lexical_score": 0.5106
         },
         {
-          "message_id": "msg_3769",
-          "text": "Done bhai, Manali final. I'll book tomorrow.",
-          "participant": "Aman Sharma",
-          "final_score": 0.8906,
-          "semantic_score": 0.629,
-          "lexical_score": 0.26
+          "message_id": "msg_3767",
+          "text": "14-18 dates are locked from my side too.",
+          "participant": "Sneha Rao",
+          "final_score": 0.8126,
+          "semantic_score": 0.4377,
+          "lexical_score": 0.2501
         },
         {
-          "message_id": "msg_3740",
-          "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
-          "participant": "Rahul Verma",
-          "final_score": 0.8761,
-          "semantic_score": 0.6188,
-          "lexical_score": 0.1904
+          "message_id": "msg_3714",
+          "text": "Kasol cafe culture is amazing, heard good things about German Bakery.",
+          "participant": "Kabir Joshi",
+          "final_score": 0.831,
+          "semantic_score": 0.5035,
+          "lexical_score": 0.1971
         }
       ]
     },
@@ -1364,14 +1364,14 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 535.58,
+      "latency_ms": 327.84,
       "top_candidates": [
         {
           "message_id": "msg_4305",
           "text": "August 5 placement briefing: Oracle and Cisco campus drives scheduled next week.",
           "participant": "Rohan Mehta",
-          "final_score": 0.8653,
-          "semantic_score": 0.4965,
+          "final_score": 0.8268,
+          "semantic_score": 0.4004,
           "lexical_score": 0.4446
         },
         {
@@ -1404,7 +1404,7 @@
       "top3_match": true,
       "word_overlap": 2,
       "is_zero_overlap": false,
-      "latency_ms": 1441.05,
+      "latency_ms": 1025.19,
       "top_candidates": [
         {
           "message_id": "msg_2309",
@@ -1444,7 +1444,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 641.77,
+      "latency_ms": 452.45,
       "top_candidates": [
         {
           "message_id": "msg_4720",
@@ -1484,30 +1484,30 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 1498.02,
+      "latency_ms": 1184.56,
       "top_candidates": [
         {
           "message_id": "msg_3769",
           "text": "Done bhai, Manali final. I'll book tomorrow.",
           "participant": "Aman Sharma",
           "final_score": 1.0,
-          "semantic_score": 0.6997,
+          "semantic_score": 0.3595,
           "lexical_score": 0.5369
         },
         {
           "message_id": "msg_3767",
           "text": "14-18 dates are locked from my side too.",
           "participant": "Sneha Rao",
-          "final_score": 0.6455,
-          "semantic_score": 0.674,
+          "final_score": 0.5484,
+          "semantic_score": 0.4581,
           "lexical_score": 0.5972
         },
         {
           "message_id": "msg_3542",
           "text": "Sabhi log suno, total limit 8k fix kar di.",
           "participant": "Priya Patel",
-          "final_score": 0.6383,
-          "semantic_score": 0.5883,
+          "final_score": 0.5297,
+          "semantic_score": 0.3471,
           "lexical_score": 0.2354
         }
       ]
@@ -1524,7 +1524,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 2833.52,
+      "latency_ms": 2296.7,
       "top_candidates": [
         {
           "message_id": "msg_1390",
@@ -1564,7 +1564,7 @@
       "top3_match": true,
       "word_overlap": 0,
       "is_zero_overlap": true,
-      "latency_ms": 2139.33,
+      "latency_ms": 1639.69,
       "top_candidates": [
         {
           "message_id": "msg_4725",
@@ -1604,31 +1604,31 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 1663.08,
+      "latency_ms": 1266.18,
       "top_candidates": [
         {
           "message_id": "msg_3769",
           "text": "Done bhai, Manali final. I'll book tomorrow.",
           "participant": "Aman Sharma",
-          "final_score": 0.9367,
-          "semantic_score": 0.629,
+          "final_score": 0.8239,
+          "semantic_score": 0.3783,
           "lexical_score": 0.5369
-        },
-        {
-          "message_id": "msg_3542",
-          "text": "Sabhi log suno, total limit 8k fix kar di.",
-          "participant": "Priya Patel",
-          "final_score": 0.8609,
-          "semantic_score": 0.5242,
-          "lexical_score": 0.2501
         },
         {
           "message_id": "msg_3767",
           "text": "14-18 dates are locked from my side too.",
           "participant": "Sneha Rao",
-          "final_score": 0.8429,
-          "semantic_score": 0.5572,
+          "final_score": 0.7892,
+          "semantic_score": 0.4377,
           "lexical_score": 0.5972
+        },
+        {
+          "message_id": "msg_3542",
+          "text": "Sabhi log suno, total limit 8k fix kar di.",
+          "participant": "Priya Patel",
+          "final_score": 0.7813,
+          "semantic_score": 0.3473,
+          "lexical_score": 0.2501
         }
       ]
     },
@@ -1644,30 +1644,30 @@
       "top3_match": true,
       "word_overlap": 1,
       "is_zero_overlap": false,
-      "latency_ms": 1553.89,
+      "latency_ms": 1277.71,
       "top_candidates": [
         {
           "message_id": "msg_3769",
           "text": "Done bhai, Manali final. I'll book tomorrow.",
           "participant": "Aman Sharma",
-          "final_score": 0.9445,
-          "semantic_score": 0.629,
+          "final_score": 0.8506,
+          "semantic_score": 0.4203,
           "lexical_score": 0.6149
         },
         {
           "message_id": "msg_3542",
           "text": "Sabhi log suno, total limit 8k fix kar di.",
           "participant": "Priya Patel",
-          "final_score": 0.8609,
-          "semantic_score": 0.5242,
+          "final_score": 0.7876,
+          "semantic_score": 0.3614,
           "lexical_score": 0.2501
         },
         {
           "message_id": "msg_3740",
           "text": "Found a riverside cottage in Old Manali with bonfire, booked 3 rooms.",
           "participant": "Rahul Verma",
-          "final_score": 0.8445,
-          "semantic_score": 0.6188,
+          "final_score": 0.7635,
+          "semantic_score": 0.4387,
           "lexical_score": 0.3356
         }
       ]

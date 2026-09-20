@@ -49,19 +49,23 @@ class HybridRetriever:
 
         # Multi-representation semantic search with expanded representations
         if expanded_queries:
-            for exp_q in expanded_queries:
-                exp_emb = self.index_manager.embedder.encode(exp_q)
-                exp_results = self.index_manager.search_semantic(exp_emb, top_k=top_k // 2)
-                for mid, s in exp_results:
-                    if mid in best_sem:
-                        best_sem[mid] = max(best_sem[mid], float(s))
-                    else:
-                        msg = self.index_manager.get_message(mid)
-                        if msg:
-                            norm_t = msg["text"].strip().lower()
-                            if sem_text_counts.get(norm_t, 0) < 3:
-                                best_sem[mid] = float(s)
-                                sem_text_counts[norm_t] = sem_text_counts.get(norm_t, 0) + 1
+            queries_to_encode = [q.strip() for q in expanded_queries[:2] if q.strip()]
+            if queries_to_encode:
+                exp_embs = self.index_manager.embedder.encode(queries_to_encode)
+                if len(exp_embs.shape) == 1:
+                    exp_embs = [exp_embs]
+                for exp_emb in exp_embs:
+                    exp_results = self.index_manager.search_semantic(exp_emb, top_k=top_k // 2)
+                    for mid, s in exp_results:
+                        if mid in best_sem:
+                            best_sem[mid] = max(best_sem[mid], float(s))
+                        else:
+                            msg = self.index_manager.get_message(mid)
+                            if msg:
+                                norm_t = msg["text"].strip().lower()
+                                if sem_text_counts.get(norm_t, 0) < 3:
+                                    best_sem[mid] = float(s)
+                                    sem_text_counts[norm_t] = sem_text_counts.get(norm_t, 0) + 1
 
         # 2. Lexical retrieval with primary query and expanded variants
         lexical_results = self.index_manager.lexical_index.search_lexical(query, limit=top_k)

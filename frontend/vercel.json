@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://aarzoodahiya81-recallx-backend.hf.space/api/:path*"
+      "destination": "https://recall-backend-ea8u.onrender.com/api/:path*"
     },
     {
       "source": "/(.*)",
