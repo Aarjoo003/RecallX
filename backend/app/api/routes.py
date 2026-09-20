@@ -15,6 +15,24 @@ from ..indexing.index_manager import IndexManager
 
 router = APIRouter(prefix="/api")
 
+@router.get("")
+@router.get("/")
+def api_root():
+    return {
+        "status": "online",
+        "service": "RecallX Semantic Retrieval Engine API",
+        "version": "1.0.0",
+        "endpoints": {
+            "health": "/api/health",
+            "search": "/api/search",
+            "decisions": "/api/decisions",
+            "participants": "/api/participants",
+            "evaluation": "/api/evaluation",
+            "thread": "/api/thread/{thread_id}",
+            "context": "/api/context/{message_id}",
+        }
+    }
+
 @router.get("/health")
 def health_check():
     mgr = IndexManager.get_instance()
