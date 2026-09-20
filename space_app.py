@@ -34,8 +34,18 @@ fastapi_app.router.routes = [
 ]
 
 try:
+    import spaces
+
+    gpu_decorator = spaces.GPU
+except Exception:
+
+    def gpu_decorator(fn):
+        return fn
+
+try:
     import gradio as gr
 
+    @gpu_decorator
     def perform_search(query: str, limit: int = 5):
         if not query or not query.strip():
             return (
