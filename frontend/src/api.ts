@@ -7,11 +7,16 @@ import {
   ContextMessage,
 } from './types';
 
-const DEFAULT_API_BASE = import.meta.env.DEV
-  ? '/api'
-  : 'https://recall-backend-ea8u.onrender.com/api';
+function getApiBase(): string {
+  const envUrl = import.meta.env.VITE_API_BASE;
+  if (!envUrl || !envUrl.trim()) {
+    return import.meta.env.DEV ? '/api' : 'https://recall-backend-ea8u.onrender.com/api';
+  }
+  const clean = envUrl.trim().replace(/\/+$/, '');
+  return clean.endsWith('/api') ? clean : `${clean}/api`;
+}
 
-const API_BASE = (import.meta.env.VITE_API_BASE || DEFAULT_API_BASE).replace(/\/+$/, '');
+const API_BASE = getApiBase();
 
 export async function searchMessages(request: SearchRequest): Promise<SearchResponse> {
   const res = await fetch(`${API_BASE}/search`, {
