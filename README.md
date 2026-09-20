@@ -352,7 +352,7 @@ The corpus consists of **5,200 messages** distributed realistically across 10 st
 | **Styling & Design System** | **Tailwind CSS v4** | Modern utility-first CSS with custom glassmorphism, responsive chat timelines, and dark theme |
 | **UI Components & Animation** | **Lucide React + Framer Motion** | Fluent vector iconography and smooth layout animations |
 | **Automated Testing & QA** | **Pytest + HTTPX** | Comprehensive suite of 30 automated unit, integration, and retrieval diversity tests |
-| **Interactive Demo & Container** | **Gradio + Docker** | Turnkey containerization and Hugging Face Spaces web app |
+| **Cloud Deployment & Architecture** | **Render (Backend) + Vercel (Frontend)** | Serverless edge reverse-proxying with containerized FastAPI microservices |
 
 ---
 
