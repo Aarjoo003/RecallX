@@ -127,7 +127,7 @@ export const App: React.FC = () => {
     initData();
   }, []);
 
-  // Auto-reconnect polling while engine is offline (e.g. cold start on Hugging Face Spaces)
+  // Auto-reconnect polling while engine is offline (e.g. cold start on Render)
   useEffect(() => {
     if (engineOnline) return;
 

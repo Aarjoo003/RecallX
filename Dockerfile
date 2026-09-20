@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
 
-# Hugging Face Spaces runs as user ID 1000
+# Application user
 RUN useradd -m -u 1000 user
 USER user
 ENV HOME=/home/user \
@@ -35,12 +35,12 @@ RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTr
 COPY --chown=user:user backend/ ./backend/
 COPY --chown=user:user data/ ./data/
 
-# Expose standard Hugging Face Spaces port
-EXPOSE 7860
+# Expose default port
+EXPOSE 10000
 
 # Healthcheck for container orchestration
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD curl -f http://localhost:7860/health || exit 1
+    CMD curl -f http://localhost:${PORT:-10000}/health || exit 1
 
-# Launch FastAPI with Uvicorn
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "7860"]
+# Launch FastAPI with dynamic port binding
+CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-10000}"]
